@@ -1,0 +1,53 @@
+.a-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s;
+    /* Adicionamos display: block/inline-block para garantir que o padding funcione */
+    display: inline-block;
+}
+
+.a-link:hover {
+    color: #8a5b9e;
+}
+
+.a-small-text {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.a-email-link {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* OTIMIZAÇÃO PARA MOBILE (Abaixo de 576px) */
+@media (max-width: 576px) {
+    .a-link {
+        /* Reduz o padding horizontal do link para garantir que caiba */
+        padding: 8px 5px; 
+        font-size: 0.9rem;
+    }
+    
+    .a-small-text,
+    .a-email-link {
+        font-size: 0.8em;
+    }
+
+    .a-email-link {
+        margin-top: 5px;
+    }
+}
+
+/* PAINEL ADM*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #7f6390;
+}

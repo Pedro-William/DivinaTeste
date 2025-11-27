@@ -1,0 +1,103 @@
+.m-carousel-view {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.m-product-row, .m-category-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+}
+
+.m-product-card, .m-category-card {
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .m-product-card, .m-category-card {
+        width: calc(50% - 10px);
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .m-product-card, .m-category-card {
+        width: calc(33.333% - 13.333px);
+    }
+}
+@media (min-width: 1024px) {
+    .m-product-card, .m-category-card {
+        width: calc(25% - 15px);
+    }
+}
+
+.m-carousel-indicators {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 5px;
+}
+.a-indicator {
+    display: block;
+    width: 25px;
+    height: 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s, background-image 0.3s, width 0.3s;
+    background-color: #E6E6FA;
+}
+
+.a-indicator:hover:not(.a-indicator--active) {
+    background-color: #D8BFD8;
+}
+
+.a-indicator--active {
+    background-image: linear-gradient(to right, #8A2BE2, #9370DB);
+    width: 35px;
+    height: 8px;
+    cursor: default;
+}
+
+.a-indicator::before {
+    content: '';
+}
+
+.a-carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background 0.3s, opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.a-carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.a-carousel-control--prev {
+    left: 10px;
+}
+.a-carousel-control--next {
+    right: 10px;
+}
+
+.a-carousel-control[disabled] {
+    opacity: 0.3;
+    cursor: default;
+}

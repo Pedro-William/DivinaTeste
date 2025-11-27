@@ -1,0 +1,52 @@
+.o-value-proposition {
+    background: #ffffff;
+    margin-top: 40px;
+}
+
+.m-value-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.m-value-item {
+    flex-basis: 33%;
+    max-width: 200px;
+}
+
+.a-value-icon {
+    font-size: 3.5em;
+    color: #5A3587;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.a-value-text {
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.2;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .m-value-row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .m-value-item {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .m-value-row {
+        gap: 30px;
+    }
+    .m-value-item {
+        flex-basis: 100%;
+    }
+}

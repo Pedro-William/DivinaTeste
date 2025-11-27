@@ -1,0 +1,38 @@
+.action-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+}
+.action-btn:hover { 
+    background-color: #45a049;
+}
+.delete-btn { 
+    background-color: #f44336;
+} 
+.delete-btn:hover { 
+    background-color: #da190b;
+} 
+.show-btn {
+    background-color: #2196F3;
+}
+.show-btn:hover {
+    background-color: #0b7dda;
+}
+
+/* Botão de Logout (Específico, mas isolado) */
+.logout-btn {
+    margin: 40px auto;
+    display: block;
+    padding: 15px 40px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.logout-btn:hover {
+    background-color: #d32f2f;
+}

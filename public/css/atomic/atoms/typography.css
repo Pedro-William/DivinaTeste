@@ -1,0 +1,29 @@
+.a-section-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5A3587;
+    margin: 40px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.a-product-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px 0;
+}
+
+.a-product-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #5A3587;
+    margin: 5px 0 15px 0;
+}
+
+.a-product-size {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+}

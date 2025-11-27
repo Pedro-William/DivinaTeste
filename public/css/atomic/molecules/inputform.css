@@ -1,0 +1,103 @@
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: var(--cor-texto-label);
+}
+
+.breadcrumb a {
+    color: var(--cor-texto-label);
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+}
+
+.campo-grupo {
+    margin-bottom: 25px;
+}
+
+.input-com-icone {
+    position: relative;
+}
+
+.input-com-icone input {
+    padding-right: 40px;
+}
+
+.input-com-icone .fas {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--cor-placeholder);
+    cursor: pointer;
+}
+
+.data-nascimento {
+    display: flex;
+    gap: 10px;
+}
+
+.data-nascimento select {
+    flex: 1;
+    color: var(--cor-texto-label);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23a38db6%22%20d%3D%22M287%20176.7L146.2%2036.9c-3.7-3.7-9.7-3.7-13.4%200L5.4%20176.7c-3.7%203.7-3.7%209.7%200%2013.4%203.7%203.7%209.7%203.7%2013.4%200l127.3-127.3c3.7-3.7%209.7-3.7%2013.4%200l127.3%20127.3c3.7%203.7%209.8%203.7%2013.5%200%203.7-3.7%203.7-9.7.1-13.4z%22%2F%3E%3C%2Fsvg%3E') no-repeat right 10px center;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.checkbox-grupo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-grupo input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border: 1px solid var(--cor-texto-label);
+}
+
+.checkbox-grupo label {
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--cor-texto-label);
+}
+
+@media (max-width: 768px) {
+
+    .breadcrumb {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .campo-grupo {
+        margin-bottom: 20px;
+    }
+
+    .input-com-icone input {
+        padding-right: 35px;
+    }
+
+    .input-com-icone .fas {
+        right: 10px;
+    }
+
+    .data-nascimento {
+        gap: 5px;
+    }
+
+    .checkbox-grupo {
+        margin-bottom: 15px;
+    }
+
+    .checkbox-grupo label {
+        font-size: 11px;
+    }
+}

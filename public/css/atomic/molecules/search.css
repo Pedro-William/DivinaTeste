@@ -1,0 +1,27 @@
+.m-search {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.m-search .a-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .m-search {
+        max-width: 100%;
+    }
+}

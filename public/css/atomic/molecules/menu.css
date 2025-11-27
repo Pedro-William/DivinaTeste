@@ -1,0 +1,68 @@
+.m-menu {
+    background: #EEE4F4;
+    padding: 8px 0;
+}
+
+.m-menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@media (max-width: 992px) {
+    .m-menu__list {
+        flex-wrap: wrap; 
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .m-menu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 15px 0;
+    }
+
+    .m-menu > .a-hamburger-btn {
+        display: block !important;
+        z-index: 100;
+    }
+
+    .m-menu__list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: inherit;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 20px;
+        align-items: flex-start;
+    }
+
+    .m-menu__list.is-open {
+        display: flex;
+    }
+}
+
+/* PAINEL ADM*/
+
+/* Link Individual do Menu (CABEÇALHO) */
+.menu a {
+    text-decoration: none;
+    color: #5c4a60;
+    font-size: 15px;
+    font-weight: 600;
+}
+.menu a:hover {
+    color: #a575a5;
+    text-decoration: underline;
+    font-weight: 700;
+}

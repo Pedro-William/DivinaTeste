@@ -1,0 +1,20 @@
+/* Estilos base para Títulos */
+h1 {
+    font-size: 28px;
+    color: #0a080a;
+    font-weight: bold;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b2d5c;
+}
+h3 {
+    font-size: 20px;
+}
+h4 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 14px;
+}

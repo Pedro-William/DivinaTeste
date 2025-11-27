@@ -1,0 +1,45 @@
+.container-principal {
+    width: 100%;
+    max-width: 900px;
+    margin: 5px auto;
+    margin-bottom: 60px;
+}
+
+.form-login-ajuste {
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.form-container {
+    background-color: var(--cor-fundo-form);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.botoes-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.botoes-login .btn-cadastro {
+    width: 180px;
+    border-radius: 25px;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .botoes-login .btn-cadastro {
+        width: 100%;
+    }
+}

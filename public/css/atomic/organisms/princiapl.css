@@ -1,0 +1,602 @@
+/* ========================================================================
+   3. ORGANISMS (ORGANISMOS)
+   Seções de layout complexas e componentes compostos.
+======================================================================== */
+
+/* Container Fixo (Organismo de layout) */
+.containe-cabecalhoemenu {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* Cabeçalho (Organismo) */
+.Cabecalho {
+    background: #f0d7f1;
+    border-bottom: 1px solid #e1c2e1;
+}
+.container-cabecalho {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+/* Formulário de Busca (Organismo) */
+.campodebusca1 {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    position: relative;
+}
+
+/* Grupo de Opções de Usuário (Organismo) */
+.opcoes-usuario {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Menu Principal (Organismo) */
+.menu {
+    border-top: 1px solid #dcbad3;
+    background-color: #fef3f9;
+}
+.container-menu {
+    padding: 10px 0;
+}
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 120px;
+}
+
+/* Rodapé - Seção Contato/Email (Organismo) */
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+.container-tudo {
+    background: #9E7FAF;
+    width: 100%;
+}
+.containe-email {
+    width: 100%;
+    margin: 0;
+    background: #9E7FAF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.container-iconeeescrita {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9E7FAF;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.email i {
+    font-size: 36px;
+    color: #000000;
+}
+.email p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+/* Rodapé - Seção Redes Sociais (Organismo) */
+.final-redessociais {
+    background: #EADBEA;
+    text-align: center;
+    padding: 20px 0;
+}
+.final-redessociais h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.container-redes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Rodapé Final (Organismo) */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+/* Seção de Produtos (Organismo) */
+.cards1 {
+    background: #ffffff;
+}
+.cards-destaques h1,
+.cardsvendas h1,
+.card-maisventidos h1 {
+    font-size: 28px;
+    color: #0a080a;
+    font-weight: bold;
+    border-bottom: 2px solid #a68dac;
+    padding-right: 5%;
+    padding-left: 4%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+.cards-produtos {
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/* Seção de Depoimentos (Organismo) */
+.container2 {
+    background: #ffffff;
+    padding: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.container-dep h1 {
+    font-size: 28px;
+    color: #0a080a;
+    font-weight: bold;
+    border-bottom: 2px solid #a68dac;
+    padding-right: 5%;
+    padding-left: 4%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+.container-depoimento {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Formulário de Login (Organismo) */
+.login {
+    width: 300px;
+    margin: 100px auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.login h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-control {
+    background-color: #9E7FAF;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Estilos dos filhos do .form-control */
+.form-control label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4B234D;
+    text-align: left;
+}
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E8E3F5;
+}
+.form-control p {
+    font-size: 12px;
+    color: #4B234D;
+    margin-bottom: 20px;
+}
+.form-control p a {
+    color: #4B234D;
+    text-decoration: underline;
+}
+.form-control button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #b17ebb;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-control button:hover {
+    background-color: #6C4D85;
+}
+
+/* Formulário de Cadastro (Organismo) */
+.cadastrar {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+.cadastrar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.container-form {
+    background-color: #9E7FAF;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-control2 {
+    text-align: left;
+}
+.labeleinput-container {
+    display: flex;
+}
+.labeleinput-container label {
+    padding-top: 2%;
+}
+/* Estilos dos filhos do .form-control2 */
+.form-control2 label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4B234D;
+}
+.form-control2 input[type="text"],
+.form-control2 input[type="email"],
+.form-control2 input[type="password"],
+.form-control2 input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E8E3F5;
+}
+.form-control2 input[type="radio"] {
+    margin-right: 10px;
+}
+.container-form p {
+    font-size: 12px;
+    color: #4B234D;
+    margin: 15px 0;
+}
+.container-form p a {
+    color: #4B234D;
+    text-decoration: underline;
+}
+.container-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #b17ebb;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.container-form button:hover {
+    background-color: #6C4D85;
+}
+
+/* Página "Sobre Nós" (Organismo) */
+.container-sobrenos h1 {
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+    color: #333;
+}
+.bemvindos h3 {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+    background: #9E7FAF;
+    border-radius: 10px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+}
+.imgsobrenos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 6%;
+}
+.imgsobrenos img {
+    width: 100%;
+    padding-left: 1%;
+    max-width: 412px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.txt-sobrenos {
+    width: 100%;
+    max-width: 765px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 23px;
+    color: #555;
+    margin: 0 auto;
+}
+.conteudo {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background: #ffffff;
+}
+
+/* Galeria de Imagens (Organismo) */
+.galeria {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+/* Menu Hamburguer (Organismo) */
+.hamburguer body { /* Contexto específico */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.hamburguer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #f0d7f1;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    z-index: 999;
+}
+.hamburguer.active {
+    transform: translateX(0);
+}
+.menu-btn {
+    all: unset;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    color: rgb(5, 5, 5);
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+.menu-btn:hover {
+    background-color: transparent;
+    color: rgb(5, 5, 5);
+}
+.hamburguer .logo {
+    width: 200px;
+    margin-top: 10px;
+}
+.hamburguer .nav {
+    width: 100%;
+    padding-top: 20px;
+}
+.hamburguer .nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.hamburguer .category {
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.hamburguer .category > a {
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+.hamburguer .submenu {
+    background-color: #e0b3ff;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+.hamburguer .category.active .submenu {
+    max-height: 500px;
+    opacity: 1;
+}
+.hamburguer .submenu li {
+    padding: 10px;
+    background-color: #d6a1fa;
+}
+.hamburguer .submenu li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+.hamburguer .submenu li a:hover {
+    color: #9E7FAF;
+}
+.hamburguer .container { /* Galeria dentro do hamburguer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 960px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+
+/* --- Media Queries para Organismos --- */
+
+@media (max-width: 1200px) {
+    .container-cabecalho {
+        width: 95%;
+        padding: 15px;
+    }
+    .campodebusca { /* Classe não definida no seu CSS, mas presente na media query */
+        max-width: 200px;
+    }
+    .opcoes-usuario {
+        gap: 15px;
+    }
+    .menu ul {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo img { /* Classe não definida no seu CSS, mas presente na media query */
+        max-width: 120px;
+        margin-bottom: 10px;
+    }
+    .campodebusca {
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+    .opcoes-usuario {
+        gap: 10px;
+    }
+    .menu ul {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-produtos {
+        gap: 10px;
+    }
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .menu a {
+        font-size: 14px;
+    }
+    .campodebusca {
+        max-width: 200px;
+    }
+    .opcoes-usuario {
+        flex-direction: row;
+        gap: 5px;
+    }
+    .quantidade-carrinho {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+    .galeria {
+        /* O estilo 'grid-template-columns' estava em conflito com o 'display: flex' anterior */
+        width: 100%;
+        padding: 0 20px;
+    }
+    .campodebusca {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .campodebusca input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+    .campodebusca {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .opcoes-usuario {
+        justify-content: center;
+    }
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .menu a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 529px) {
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 960px) {
+    .hamburguer .image-btn {
+        width: calc(50% - 10px);
+    }
+}

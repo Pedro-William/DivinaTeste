@@ -1,0 +1,94 @@
+:root {
+    --cor-fundo-pagina: #f5f5f5;
+    --cor-fundo-form: #f3e8f3;
+    --cor-primaria: #a38db6;
+    --cor-texto-principal: #333333;
+    --cor-texto-label: #555555;
+    --cor-placeholder: #aaaaaa;
+    --cor-borda-input: #dddddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.titulo-cadastro {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-weight: bold;
+    color: var(--cor-texto-label);
+    margin-bottom: 5px;
+}
+
+.campo-grupo input[type="text"],
+.campo-grupo input[type="email"],
+.campo-grupo input[type="tel"],
+.campo-grupo input[type="password"],
+.data-nascimento select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--cor-borda-input);
+    border-radius: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.campo-grupo input::placeholder {
+    color: var(--cor-placeholder);
+    font-size: 12px;
+}
+
+.btn-cadastro {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cadastro:hover {
+    background-color: #8c779c;
+}
+
+@media (max-width: 768px) {
+    
+    .titulo-cadastro {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .campo-grupo input[type="text"],
+    .campo-grupo input[type="email"],
+    .campo-grupo input[type="tel"],
+    .campo-grupo input[type="password"],
+    .data-nascimento select {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .campo-grupo input::placeholder {
+        font-size: 11px;
+    }
+
+    .btn-cadastro {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}

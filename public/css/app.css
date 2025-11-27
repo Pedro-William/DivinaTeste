@@ -1,0 +1,70 @@
+
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Atoms */
+@import url("/css/atomic/atoms/buttons.css");
+@import url("/css/atomic/atoms/inputs.css");
+@import url("/css/atomic/atoms/icons.css");
+@import url("/css/atomic/atoms/links.css");
+@import url("/css/atomic/atoms/hamburguer.css");
+@import url("/css/atomic/atoms/typography.css");
+@import url("/css/atomic/atoms/card.css");
+@import url("/css/atomic/atoms/product.css");
+@import url("/css/atomic/atoms/category.css");
+@import url("/css/atomic/atoms/about.css");
+@import url("/css/atomic/atoms/form-elements");
+/* adm */
+@import url("/css/atomic/atoms/paragrafos.css");
+@import url("/css/atomic/atoms/painel.css");
+@import url("/css/atomic/atoms/label.css");
+@import url("/css/atomic/atoms/img.css");
+@import url("/css/atomic/atoms/corpo.css");
+
+
+/* Molecules */
+@import url("/css/atomic/molecules/botoesconfirm.css");
+@import url("/css/atomic/molecules/inputform.css");
+@import url("/css/atomic/molecules/search.css");
+@import url("/css/atomic/molecules/user-options.css");
+@import url("/css/atomic/molecules/menu.css");
+@import url("/css/atomic/molecules/newletter.css");
+@import url("/css/atomic/molecules/social.css");
+@import url("/css/atomic/molecules/info.css");
+@import url("/css/atomic/molecules/layoutcarrinho.css");
+@import url("/css/atomic/molecules/productpage.css");
+@import url("/css/atomic/molecules/quantity-selector.css");
+/* adm */
+@import url("/css/atomic/molecules/ui.css");
+
+
+
+/* Organisms */
+@import url("/css/atomic/organisms/header.css");
+@import url("/css/atomic/organisms/footer.css");
+@import url("/css/atomic/organisms/proposition.css");
+@import url("/css/atomic/organisms/carrosse.css");
+@import url("/css/atomic/organisms/sobrenos.css");
+@import url("/css/atomic/organisms/baselogin.css");
+@import url("/css/atomic/organisms/bloco.css");
+@import url("/css/atomic/organisms/layoutconfirm.css");
+@import url("/css/atomic/organisms/layoutform.css");
+@import url("/css/atomic/organisms/layoutprodutos.css");
+@import url("/css/atomic/organisms/o-user-dashboard-layout.css");
+/* adm */
+@import url("/css/atomic/organisms/princiapl.css");
+@import url("/css/atomic/organisms/list-styles.css");
+@import url("/css/atomic/organisms/form-styles.css");
+
+
+
+
+

@@ -1,0 +1,49 @@
+.dados-conta-container {
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--cor-fundo-form);
+    margin-bottom: 20px;
+}
+
+.titulo-dados {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-texto-principal);
+    margin-bottom: 20px;
+}
+
+.bloco-dados p {
+    font-size: 16px;
+    line-height: 2.2;
+    color: var(--cor-texto-principal);
+    margin: 0;
+}
+
+.btn-editar {
+    margin-top: 30px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-editar .fas {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .dados-conta-container {
+        max-width: none;
+        padding: 30px 20px;
+    }
+    
+    .bloco-dados p {
+        font-size: 15px;
+        line-height: 2;
+    }
+}

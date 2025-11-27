@@ -1,0 +1,27 @@
+/* Reset Geral e Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Base do Corpo */
+body {
+    background: linear-gradient(to right, rgb(253 249 255), rgb(232 214 241));
+    font-family: 'Inria Sans', 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    /* Estilos para centralizar conteúdo principal (formulários, painel) */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha no centro verticalmente (útil para login/cadastro) */
+    min-height: 100vh;
+    padding: 40px 0; /* Espaçamento vertical para evitar que o conteúdo fixe na borda */
+}
+
+/* Corpo para páginas que NÃO DEVEM centralizar o conteúdo (ex: páginas de listagem com menu) */
+body.page-content {
+    display: block;
+    padding: 0;
+    min-height: auto;
+}

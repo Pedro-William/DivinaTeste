@@ -1,0 +1,22 @@
+.dados-box {
+    background-color: var(--cor-fundo-box);
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.resumo-pedido-container {
+    flex: 1;
+    background-color: var(--cor-fundo-box);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.botao-adicionar-endereco,
+.botao-pagamento {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,125 @@
+/* ========================================================================
+   5. PAGES/LAYOUTS (Estilos Específicos para o Painel)
+   Melhorado para Responsividade e Tamanho dos Cards
+   **Ícones BRANCOS (com filtro invert), Sem Borda e Maiores**
+======================================================================== */
+
+body.painel-admin-body {
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.dashboard-painel {
+    width: 95%;
+    max-width: 1200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-painel .logo-painel {
+    max-width: 300px;
+    margin-bottom: 50px;
+    filter: drop-shadow(0 0 0.5rem #ccc); 
+}
+
+.painel-cards-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Estilo individual do Card (Botão) */
+.painel-card {
+    background-color: #9E7FAF; /* Cor roxa dos cards (MANTIDA) */
+    border: 1px solid #7f6390;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 15px; 
+    height: 160px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.painel-card a {
+    color: white;
+    font-weight: bold;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* ESTILO DA IMAGEM */
+.painel-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px; 
+    border: none; 
+    outline: none;
+    
+    /* REINTRODUZIDO: Filtro para tornar os ícones brancos */
+    filter: invert(100%) brightness(120%); /* Inverte e aumenta um pouco o brilho para um branco mais puro */
+}
+
+.painel-card p {
+    margin: 5px 0 0;
+    font-size: 15px; 
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Ajustes de Responsividade Específicos do Painel */
+
+@media (max-width: 768px) {
+    .painel-cards-container {
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    }
+    .painel-card {
+        padding: 20px 10px;
+        height: 140px; 
+    }
+    .painel-card img {
+        width: 60px; 
+        height: 60px;
+    }
+    .painel-card p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-painel .logo-painel {
+        margin-bottom: 30px;
+        max-width: 180px;
+    }
+    .painel-card {
+        height: 120px;
+        padding: 15px 10px;
+    }
+    .painel-card img {
+        width: 50px;
+        height: 50px;
+    }
+}

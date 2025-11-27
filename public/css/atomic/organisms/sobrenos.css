@@ -1,0 +1,28 @@
+.m-about-slides-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.a-about-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+    min-height: 100px;
+}
+
+.a-about-slide--active {
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.m-about-text {
+    display: flex;
+    flex-direction: column;
+}

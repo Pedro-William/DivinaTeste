@@ -1,0 +1,35 @@
+.o-footer {
+    width: 100%;
+}
+
+.a-copyright {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .a-newsletter-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .a-newsletter-content p {
+        margin-bottom: 5px;
+    }
+    .a-input-email {
+        width: 200px;
+    }
+    
+    .m-footer-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+    .a-contact-block,
+    .a-social-block {
+        text-align: center;
+    }
+}
