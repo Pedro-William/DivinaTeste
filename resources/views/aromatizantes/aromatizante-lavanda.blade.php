@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aromatizador Lavanda - Divina Essência</title>
 
-    <link rel="stylesheet" href="{{ asset('../css/atomic/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/atoms/buttons.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/search.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/user-options.css')}}">
@@ -42,9 +42,9 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
 
@@ -65,12 +65,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -143,7 +143,7 @@
         <h4 class="a-product-name">Sabonete Argila Rosa e Lavanda</h4>
         <p class="a-product-size">110g</p>
         <h3 class="a-product-price">R$ 27,80</h3>
-        <a href="/home/sabonetes/argila rosa e lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/argila rosa e lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -151,7 +151,7 @@
         <h4 class="a-product-name">Bucha Vegetal</h4>
         <p class="a-product-size">...</p>
         <h3 class="a-product-price">R$ 19,20</h3>
-        <a href="/home/acessorios/esponja vegetal" class="a-btn-add">Adicionar</a>
+        <a href="/esponja vegetal" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -159,7 +159,7 @@
         <h4 class="a-product-name">Citronela</h4>
         <p class="a-product-size">250ml</p>
         <h3 class="a-product-price">R$ 32,40</h3>
-        <a href="/home/aromatizantes/citronela" class="a-btn-add">Adicionar</a>
+        <a href="/citronela" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -167,7 +167,7 @@
         <h4 class="a-product-name">Blue Tansy</h4>
         <p class="a-product-size">140g</p>
         <h3 class="a-product-price">R$ 23,40</h3>
-        <a href="/home/velas/blue tansy" class="a-btn-add">Adicionar</a>
+        <a href="/blue tansy" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -175,7 +175,7 @@
         <h4 class="a-product-name">Sabonete Argila Rosa e Lavanda 2</h4>
         <p class="a-product-size">110g</p>
         <h3 class="a-product-price">R$ 27,80</h3>
-        <a href="/home/sabonetes/argila rosa e lavanda 2" class="a-btn-add">Adicionar</a>
+        <a href="/argila rosa e lavanda 2" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -183,7 +183,7 @@
         <h4 class="a-product-name">Bucha Vegetal 2</h4>
         <p class="a-product-size">...</p>
         <h3 class="a-product-price">R$ 19,20</h3>
-        <a href="/home/acessorios/esponja vegetal 2" class="a-btn-add">Adicionar</a>
+        <a href="/esponja vegetal 2" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -191,7 +191,7 @@
         <h4 class="a-product-name">Citronela 2</h4>
         <p class="a-product-size">250ml</p>
         <h3 class="a-product-price">R$ 32,40</h3>
-        <a href="/home/aromatizantes/citronela 2" class="a-btn-add">Adicionar</a>
+        <a href="/citronela 2" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -199,7 +199,7 @@
         <h4 class="a-product-name">Blue Tansy 2</h4>
         <p class="a-product-size">140g</p>
         <h3 class="a-product-price">R$ 23,40</h3>
-        <a href="/home/velas/blue tansy 2" class="a-btn-add">Adicionar</a>
+        <a href="/blue tansy 2" class="a-btn-add">Adicionar</a>
     </div>
 </div>
 

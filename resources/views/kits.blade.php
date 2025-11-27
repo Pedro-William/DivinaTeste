@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
    
-    <link rel="stylesheet" href="{{ asset('css/atomic/app.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}"> 
     
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,9 +37,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -60,12 +60,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -83,56 +83,56 @@
                 <img src="img/kits-bluetansy.png" alt="Kit Bem-Estar Lavanda (Óleo e Vela)" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Blue Tansy</h4> 
                 <h3 class="a-product-price">R$ 149,90</h3> 
-                <a href="/home/kits/blue tansy" class="a-btn-add">Adicionar</a> 
+                <a href="/blue tansy" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-camomila.png" alt="Kit Aromatização (Difusor e Spray)" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Camomila</h4> 
                 <h3 class="a-product-price">R$ 95,00</h3> 
-                <a href="/home/kits/camomila" class="a-btn-add">Adicionar</a> 
+                <a href="/camomila" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-canela.png" alt="Kit Completo Banho e Corpo" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Canela</h4> 
                 <h3 class="a-product-price">R$ 110,50</h3> 
-                <a href="/home/kits/canela" class="a-btn-add">Adicionar</a> 
+                <a href="/canela" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-capimlimao.png" alt="Kit Capim Limão e Lavanda" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Capim Limao</h4> 
                 <h3 class="a-product-price">R$ 89,90</h3> 
-                <a href="/home/kits/capim limao" class="a-btn-add">Adicionar</a> 
+                <a href="/capim limao" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-copaiba.png" alt="Kit Presente Dia das Mães" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Copaiba</h4> 
                 <h3 class="a-product-price">R$ 185,00</h3> 
-                <a href="/home/kits/copaiba" class="a-btn-add">Adicionar</a> 
+                <a href="/copaiba" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-lavanda.png" alt="Kit Sabonetes Artesanais" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Lavanda</h4> 
                 <h3 class="a-product-price">R$ 75,00</h3> 
-                <a href="/home/kits/lavanda" class="a-btn-add">Adicionar</a> 
+                <a href="/lavanda" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-melaleuca.png" alt="Kit Essencial Home Spa" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Melaleuca</h4> 
                 <h3 class="a-product-price">R$ 130,00</h3> 
-                <a href="/home/kits/melaleuca" class="a-btn-add">Adicionar</a> 
+                <a href="/melaleuca" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-yanglang.png" alt="Kit Viagem Essencial" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Yang Lang</h4> 
                 <h3 class="a-product-price">R$ 65,00</h3> 
-                <a href="/home/kits/ylang ylang" class="a-btn-add">Adicionar</a> 
+                <a href="/ylang ylang" class="a-btn-add">Adicionar</a> 
             </div>
 
         </div>

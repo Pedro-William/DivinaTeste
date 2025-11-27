@@ -6,7 +6,7 @@
     <title>Velas - Divina Essência</title>
 
 
-    <link rel="stylesheet" href="{{ asset('css/atomic/main.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}"> 
     
 
 
@@ -36,9 +36,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -59,12 +59,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="/home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="/home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="/home/velas" class="a-link">VELAS</a></li>
-                <li><a href="/home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="/home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="/home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -79,55 +79,55 @@
             <h4 class="a-product-name">Eucalipto</h4>
             <p class="a-product-size">140g</p>
             <h3 class="a-product-price">R$ 20,00</h3> 
-            <a href="/home/velas/eucalipto" class="a-btn-add">Adicionar</a> 
+            <a href="/eucalipto" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/vela-hiba.png" alt="Vela Hiba" class="a-product-img"> 
              <h4 class="a-product-name">Hiba</h4> 
              <p class="a-product-size">140g</p>
               <h3 class="a-product-price">R$ 21,00</h3> 
-            <a href="/home/velas/vela-hiba" class="a-btn-add">Adicionar</a> 
+            <a href="/vela-hiba" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card">
              <img src="img/vela-hortelapimenta.png" alt="Vela Hortelã Pimenta" class="a-product-img"> 
              <h4 class="a-product-name">Hortelã Pimenta</h4>
               <p class="a-product-size">140g</p> 
               <h3 class="a-product-price">R$ 20,50</h3> 
-            <a href="/home/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
+            <a href="/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/vela-lavanda.png" alt="Vela Lavanda" class="a-product-img">
              <h4 class="a-product-name">Lavanda</h4> <p class="a-product-size">140g</p>
               <h3 class="a-product-price">R$ 22,00</h3>
-            <a href="/home/velas/lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/lavanda" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/vela-alecrim.png" alt="Vela Alecrim" class="a-product-img">
              <h4 class="a-product-name">Alecrim</h4> 
              <p class="a-product-size">140g</p> 
              <h3 class="a-product-price">R$ 20,00</h3> 
-            <a href="/home/velas/alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="/alecrim" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card"> 
             <img src="img/vela-bluetansy.png" alt="Vela Blue Tansy" class="a-product-img"> 
             <h4 class="a-product-name">Blue Tansy</h4> 
             <p class="a-product-size">140g</p> 
             <h3 class="a-product-price">R$ 23,40</h3> 
-            <a href="/home/velas/blue tansy" class="a-btn-add">Adicionar</a> 
+            <a href="/blue tansy" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/vela-camomila.png" alt="Vela Camomila" class="a-product-img"> 
             <h4 class="a-product-name">Camomila</h4>
              <p class="a-product-size">140g</p>
              <h3 class="a-product-price">R$ 19,70</h3> 
-            <a href="/home/velas/camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/camomila" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/vela-capimlimao.png" alt="Vela Capim Limão" class="a-product-img"> 
             <h4 class="a-product-name">Capim Limão</h4> 
             <p class="a-product-size">140g</p> 
             <h3 class="a-product-price">R$ 21,00</h3> 
-            <a href="/home/velas/capim limao" class="a-btn-add">Adicionar</a> 
+            <a href="/capim limao" class="a-btn-add">Adicionar</a> 
         </div>
     </div>
     

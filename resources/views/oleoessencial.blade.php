@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Óleos Essenciais - Divina Essência</title>
 
-    <link rel="stylesheet" href="{{ asset('css/atomic/app.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}"> 
     
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,9 +33,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -56,12 +56,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -76,56 +76,56 @@
              <h4 class="a-product-name">Alecrim</h4> 
              <p class="a-product-size">10ml</p>
               <h3 class="a-product-price">R$ 50,00</h3> 
-            <a href="/home/essencias/alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="/alecrim" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/essencia-ylangglang.png" alt="Óleo essencial Ylang glang" class="a-product-img"> 
              <h4 class="a-product-name">Ylang Ylang</h4> 
              <p class="a-product-size">10ml</p>
               <h3 class="a-product-price">R$ 53,90</h3> 
-            <a href="/home/essencias/ylang ylang" class="a-btn-add">Adicionar</a> 
+            <a href="/ylang ylang" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card">
              <img src="img/essencia-camomilaromana.png" alt="Óleo essencial Camomila Romana" class="a-product-img">
               <h4 class="a-product-name">Camomila Romana</h4>
                <p class="a-product-size">10ml</p> 
               <h3 class="a-product-price">R$ 56,00</h3>
-            <a href="/home/essencias/camomila romana" class="a-btn-add">Adicionar</a> 
+            <a href="/camomila romana" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/essencia-citronela.png" alt="Óleo essencial Citronela" class="a-product-img">
               <h4 class="a-product-name">Citronela</h4> 
               <p class="a-product-size">10ml</p> 
               <h3 class="a-product-price">R$ 52,90</h3>
-            <a href="/home/essencias/citronela" class="a-btn-add">Adicionar</a> 
+            <a href="/citronela" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card"> 
             <img src="img/essencia-copaiba.png" alt="Óleo essencial Copaíba" class="a-product-img"> 
             <h4 class="a-product-name">Copaíba</h4>
              <p class="a-product-size">10ml</p> 
              <h3 class="a-product-price">R$ 54,80</h3> 
-            <a href="/home/essencias/copaiba" class="a-btn-add">Adicionar</a> 
+            <a href="/copaiba" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/essencia-eucalipto.png" alt="Óleo essencial Eucalipto" class="a-product-img"> 
             <h4 class="a-product-name">Eucalipto</h4>
              <p class="a-product-size">10ml</p>
               <h3 class="a-product-price">R$ 55,00</h3> 
-            <a href="/home/essencias/eucalipto" class="a-btn-add">Adicionar</a> 
+            <a href="/eucalipto" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/essencia-lavanda.png" alt="Óleo essencial Lavanda" class="a-product-img">
              <h4 class="a-product-name">Lavanda</h4> 
              <p class="a-product-size">10ml</p> 
              <h3 class="a-product-price">R$ 60,00</h3> 
-            <a href="/home/essencias/lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/lavanda" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/essencia-melaleuca.png" alt="Óleo essencial Melaleuca" class="a-product-img"> 
             <h4 class="a-product-name">Melaleuca</h4> 
             <p class="a-product-size">10ml</p> 
             <h3 class="a-product-price">R$ 55,00</h3> 
-            <a href="/home/essencias/melaleuca" class="a-btn-add">Adicionar</a> 
+            <a href="/melaleuca" class="a-btn-add">Adicionar</a> 
          </div>
     </div>
     

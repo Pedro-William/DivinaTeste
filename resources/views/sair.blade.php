@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
 
-    <link rel="stylesheet" href="{{ asset('css/atomic/app.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}"> 
     <link rel="stylesheet" href="{{ asset('css/atomic/atoms/form-elements.css')}}"> 
     <link rel="stylesheet" href="{{ asset('css/atomic/molecules/inputform.css')}}"> 
     <link rel="stylesheet" href="{{ asset('css/atomic/organisms/baselogin.css')}}"> 
@@ -38,9 +38,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -61,12 +61,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
     </header>
 

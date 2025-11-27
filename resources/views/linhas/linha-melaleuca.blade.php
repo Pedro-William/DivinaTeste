@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="{{ asset('/css/atomic/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
         
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -34,9 +34,9 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -57,12 +57,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -79,14 +79,14 @@
         <img src="../img/vela-eucalipto.png" alt="Vela Eucalipto" class="a-product-img">
         <h4 class="a-product-name">Vela Eucalipto</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/home/velas/eucalipto" class="a-btn-add">Adicionar</a>
+        <a href="/eucalipto" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/essencia-eucalipto.png" alt="Essência Eucalipto" class="a-product-img">
         <h4 class="a-product-name">Essência Eucalipto</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/home/essencias/eucalipto" class="a-btn-add">Adicionar</a>
+        <a href="/eucalipto" class="a-btn-add">Adicionar</a>
     </div>
 </div>
             

@@ -32,9 +32,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -55,12 +55,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -127,56 +127,56 @@
                   <h4 class="a-product-name">Sabonete Canela</h4> 
                   <p class="a-product-size">110g</p>
                    <h3 class="a-product-price">R$ 38,00</h3> 
-                    <a href="/home/sabonete canela" class="a-btn-add">Adicionar</a> 
+                    <a href="/sabonete canela" class="a-btn-add">Adicionar</a> 
                 </div>
             <div class="m-product-card">
                  <img src="img/acessorio-escova.png" alt="Bucha Vegetal" class="a-product-img"> 
                  <h4 class="a-product-name">Escova de dente</h4> 
                  <p class="a-product-size">...</p> 
                  <h3 class="a-product-price">R$ 19,20</h3> 
-            <a href="/home/escova de dente" class="a-btn-add">Adicionar</a> 
+            <a href="/escova de dente" class="a-btn-add">Adicionar</a> 
                  </div>
             <div class="m-product-card"> 
                 <img src="img/aroma-lavanda.png" alt="Aromatizador Citronela" class="a-product-img"> 
                 <h4 class="a-product-name">Lavanda</h4> 
                 <p class="a-product-size">250ml</p> 
                 <h3 class="a-product-price">R$ 32,40</h3> 
-            <a href="/home/aromatizador de lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizador de lavanda" class="a-btn-add">Adicionar</a> 
             </div>
             <div class="m-product-card"> 
                 <img src="img/vela-hiba.png" alt="Vela Blue Tansy" class="a-product-img">
                  <h4 class="a-product-name">Hiba</h4>
                   <p class="a-product-size">140g</p> 
                   <h3 class="a-product-price">R$ 23,40</h3> 
-            <a href="/home/vela hiba" class="a-btn-add">Adicionar</a> 
+            <a href="/vela hiba" class="a-btn-add">Adicionar</a> 
                 </div>
             <div class="m-product-card">
                  <img src="img/sbnt-aveiamel.png" alt="Sabonete Argila Rosa e Lavanda 2" class="a-product-img">
                   <h4 class="a-product-name">Sabonete Aveia e Mel</h4> 
                   <p class="a-product-size">110g</p> 
                   <h3 class="a-product-price">R$ 38,00</h3> 
-            <a href="/home/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
+            <a href="/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
                  </div>
             <div class="m-product-card"> 
                 <img src="img/acessorio-ecobag.png" alt="Bucha Vegetal 2" class="a-product-img"> 
                 <h4 class="a-product-name">Bucha Vegetal </h4> 
                 <p class="a-product-size">...</p>
                  <h3 class="a-product-price">R$ 60,00</h3> 
-            <a href="/home/ecobag" class="a-btn-add">Adicionar</a> 
+            <a href="/ecobag" class="a-btn-add">Adicionar</a> 
                 </div>
             <div class="m-product-card"> 
                 <img src="img/aroma-canela.png" alt="Aromatizador Citronela 2" class="a-product-img">
                  <h4 class="a-product-name">Canela</h4> 
                  <p class="a-product-size">250ml</p> 
                  <h3 class="a-product-price">R$ 32,40</h3> 
-            <a href="/home/aromatizante de canela" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante de canela" class="a-btn-add">Adicionar</a> 
                  </div>
             <div class="m-product-card"> 
                 <img src="img/vela-hortelapimenta.png" alt="Vela Blue Tansy 2" class="a-product-img">
                  <h4 class="a-product-name">Hortelã Pimenta</h4> 
                  <p class="a-product-size">140g</p> 
                  <h3 class="a-product-price">R$ 23,40</h3>
-            <a href="/home/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
+            <a href="/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
                  </div>
         </div>
 
@@ -235,56 +235,56 @@
                     <h4 class="a-product-name">Sabonete Canela</h4> 
                     <p class="a-product-size">110g</p>
                      <h3 class="a-product-price">R$ 38,00</h3> 
-                      <a href="/home/sabonete canela" class="a-btn-add">Adicionar</a> 
+                      <a href="/sabonete canela" class="a-btn-add">Adicionar</a> 
                   </div>
               <div class="m-product-card">
                    <img src="img/acessorio-escova.png" alt="Bucha Vegetal" class="a-product-img"> 
                    <h4 class="a-product-name">Escova de dente</h4> 
                    <p class="a-product-size">...</p> 
                    <h3 class="a-product-price">R$ 19,20</h3> 
-              <a href="/home/escova de dente" class="a-btn-add">Adicionar</a> 
+              <a href="/escova de dente" class="a-btn-add">Adicionar</a> 
                    </div>
               <div class="m-product-card"> 
                   <img src="img/aroma-lavanda.png" alt="Aromatizador Citronela" class="a-product-img"> 
                   <h4 class="a-product-name">Lavanda</h4> 
                   <p class="a-product-size">250ml</p> 
                   <h3 class="a-product-price">R$ 32,40</h3> 
-              <a href="/home/aromatizador de lavanda" class="a-btn-add">Adicionar</a> 
+              <a href="/aromatizador de lavanda" class="a-btn-add">Adicionar</a> 
               </div>
               <div class="m-product-card"> 
                   <img src="img/vela-hiba.png" alt="Vela Blue Tansy" class="a-product-img">
                    <h4 class="a-product-name">Hiba</h4>
                     <p class="a-product-size">140g</p> 
                     <h3 class="a-product-price">R$ 23,40</h3> 
-              <a href="/home/vela hiba" class="a-btn-add">Adicionar</a> 
+              <a href="/vela hiba" class="a-btn-add">Adicionar</a> 
                   </div>
               <div class="m-product-card">
                    <img src="img/sbnt-aveiamel.png" alt="Sabonete Argila Rosa e Lavanda 2" class="a-product-img">
                     <h4 class="a-product-name">Sabonete Aveia e Mel</h4> 
                     <p class="a-product-size">110g</p> 
                     <h3 class="a-product-price">R$ 38,00</h3> 
-              <a href="/home/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
+              <a href="/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
                    </div>
               <div class="m-product-card"> 
                   <img src="img/acessorio-ecobag.png" alt="Bucha Vegetal 2" class="a-product-img"> 
                   <h4 class="a-product-name">Bucha Vegetal </h4> 
                   <p class="a-product-size">...</p>
                    <h3 class="a-product-price">R$ 60,00</h3> 
-              <a href="/home/ecobag" class="a-btn-add">Adicionar</a> 
+              <a href="/ecobag" class="a-btn-add">Adicionar</a> 
                   </div>
               <div class="m-product-card"> 
                   <img src="img/aroma-canela.png" alt="Aromatizador Citronela 2" class="a-product-img">
                    <h4 class="a-product-name">Canela</h4> 
                    <p class="a-product-size">250ml</p> 
                    <h3 class="a-product-price">R$ 32,40</h3> 
-              <a href="/home/aromatizante de canela" class="a-btn-add">Adicionar</a> 
+              <a href="/aromatizante de canela" class="a-btn-add">Adicionar</a> 
                    </div>
               <div class="m-product-card"> 
                   <img src="img/vela-hortelapimenta.png" alt="Vela Blue Tansy 2" class="a-product-img">
                    <h4 class="a-product-name">Hortelã Pimenta</h4> 
                    <p class="a-product-size">140g</p> 
                    <h3 class="a-product-price">R$ 23,40</h3>
-              <a href="/home/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
+              <a href="/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
                    </div>
           </div>
   

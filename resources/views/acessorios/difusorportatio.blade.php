@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Difusor Portátio - Divina Essência</title>
-    <link rel="stylesheet" href="{{ asset('/css/atomic/app.css')}}">    
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/atoms/buttons.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/search.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/user-options.css')}}">
@@ -39,9 +39,9 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -62,12 +62,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -126,7 +126,7 @@
         <p class="a-product-size">110g</p>
         <h3 class="a-product-price">R$ 38,00</h3>
         <!-- CORRIGIDO: Rota Sabonetes -->
-        <a href="/home/sabonetes/argila rosa e lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/argila rosa e lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 2: Bucha Vegetal (Esponja Vegetal) -->
@@ -136,7 +136,7 @@
         <p class="a-product-size">...</p>
         <h3 class="a-product-price">R$ 19,20</h3>
         <!-- CORRIGIDO: Rota Acessórios/esponja vegetal -->
-        <a href="/home/acessorios/esponja vegetal" class="a-btn-add">Adicionar</a>
+        <a href="/esponja vegetal" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 3: Aromatizador Citronela -->
@@ -145,8 +145,8 @@
         <h4 class="a-product-name">Citronela</h4>
         <p class="a-product-size">250ml</p>
         <h3 class="a-product-price">R$ 32,40</h3>
-        <!-- CORRIGIDO: Rota Aromatizantes/citronela -->
-        <a href="/home/aromatizantes/citronela" class="a-btn-add">Adicionar</a>
+        <!-- CORRIGIDO: Rota citronela -->
+        <a href="/citronela" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 4: Vela Blue Tansy -->
@@ -155,8 +155,8 @@
         <h4 class="a-product-name">Blue Tansy</h4>
         <p class="a-product-size">140g</p>
         <h3 class="a-product-price">R$ 23,40</h3>
-        <!-- CORRIGIDO: Rota Velas/blue tansy -->
-        <a href="/home/velas/blue tansy" class="a-btn-add">Adicionar</a>
+        <!-- CORRIGIDO: Rota blue tansy -->
+        <a href="/blue tansy" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 5: Sabonete Aveia e Mel -->
@@ -166,7 +166,7 @@
         <p class="a-product-size">110g</p>
         <h3 class="a-product-price">R$ 38,00</h3>
         <!-- CORRIGIDO: Rota Sabonete Aveia e Mel (fora do prefixo de sub-itens) -->
-        <a href="/home/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a>
+        <a href="/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 6: Ecobag -->
@@ -176,7 +176,7 @@
         <p class="a-product-size">...</p>
         <h3 class="a-product-price">R$ 60,00</h3>
         <!-- CORRIGIDO: Rota Acessórios/ecobag -->
-        <a href="/home/acessorios/ecobag" class="a-btn-add">Adicionar</a>
+        <a href="/ecobag" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 7: Aromatizador Citronela (Repetição) -->
@@ -185,8 +185,8 @@
         <h4 class="a-product-name">Citronela</h4>
         <p class="a-product-size">250ml</p>
         <h3 class="a-product-price">R$ 32,40</h3>
-        <!-- CORRIGIDO: Rota Aromatizantes/citronela -->
-        <a href="/home/aromatizantes/citronela" class="a-btn-add">Adicionar</a>
+        <!-- CORRIGIDO: Rota citronela -->
+        <a href="/citronela" class="a-btn-add">Adicionar</a>
     </div>
 
     <!-- Produto 8: Vela Blue Tansy (Repetição) -->
@@ -195,8 +195,8 @@
         <h4 class="a-product-name">Blue Tansy</h4>
         <p class="a-product-size">140g</p>
         <h3 class="a-product-price">R$ 23,40</h3>
-        <!-- CORRIGIDO: Rota Velas/blue tansy -->
-        <a href="/home/velas/blue tansy" class="a-btn-add">Adicionar</a>
+        <!-- CORRIGIDO: Rota blue tansy -->
+        <a href="/blue tansy" class="a-btn-add">Adicionar</a>
     </div>
 </div>
         <button class="a-carousel-control a-carousel-control--next" aria-label="Próximo">

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acessórios - Divina Essência</title>
 
-    <link rel="stylesheet" href="{{ asset('css/atomic/app.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}"> 
     
     <link rel="stylesheet" href="{{ asset('css/atomic/layoutcarrinho.css')}}">
     
@@ -33,9 +33,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -56,12 +56,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="sabonete.html" class="a-link">SABONETES</a></li>
-                <li><a href="aromatizante.html" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="vela.html" class="a-link">VELAS</a></li>
-                <li><a href="oleoessencial.html" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="acessorios.html" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="kits.html" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -76,56 +76,56 @@
             <h4 class="a-product-name">Bucha Vegetal</h4> 
             <p class="a-product-size">...</p> 
             <h3 class="a-product-price">R$ 19,20</h3> 
-            <a href="/home/acessorios/esponja vegetal" class="a-btn-add">Adicionar</a> 
+            <a href="/esponja vegetal" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-difusor.png" alt="Difusor" class="a-product-img">
              <h4 class="a-product-name">Difusor</h4> 
              <p class="a-product-size">...</p> 
              <h3 class="a-product-price">R$ 30,50</h3>
-            <a href="/home/acessorios/difusor " class="a-btn-add">Adicionar</a> 
+            <a href="/difusor " class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-difusorportatio.png" alt="Difusor Portatil" class="a-product-img"> 
             <h4 class="a-product-name">Difusor Portátil</h4> 
             <p class="a-product-size">...</p>
             <h3 class="a-product-price">R$ 43,00</h3> 
-            <a href="/home/acessorios/difusor portatio" class="a-btn-add">Adicionar</a> 
+            <a href="/difusor portatio" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-ecobag.png" alt="Ecobag Divina Essencia" class="a-product-img"> 
             <h4 class="a-product-name">Ecobag Divina Essencia</h4> 
             <p class="a-product-size">...</p> 
             <h3 class="a-product-price">R$ 60,00</h3> 
-            <a href="/home/acessorios/ecobag" class="a-btn-add">Adicionar</a> 
+            <a href="/ecobag" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-escova.png" alt="Escova de dente" class="a-product-img"> 
             <h4 class="a-product-name">Escova de dente</h4> 
             <p class="a-product-size">...</p> 
             <h3 class="a-product-price">R$ 19,70</h3> 
-            <a href="/home/escova de dente" class="a-btn-add">Adicionar</a> 
+            <a href="/escova de dente" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-escovadecabelo.png" alt="Escova de cabelo" class="a-product-img">
              <h4 class="a-product-name">Escova de cabelo</h4> 
              <p class="a-product-size">...</p> 
              <h3 class="a-product-price">R$ 22,00</h3>
-            <a href="/home/acessorios/escova de cabelo" class="a-btn-add">Adicionar</a> 
+            <a href="/escova de cabelo" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-necessarie.png" alt="Necessarie Divina Essencia" class="a-product-img"> 
             <h4 class="a-product-name">Necessarie Divina Essencia</h4> 
             <p class="a-product-size">...</p> 
             <h3 class="a-product-price">R$ 44,70</h3> 
-            <a href="./home/acessorios/necessarie" class="a-btn-add">Adicionar</a> 
+            <a href="/necessarie" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/acessorio-saboneteira.png" alt="Saboneteira" class="a-product-img"> 
             <h4 class="a-product-name">Saboneteira</h4> 
             <p class="a-product-size">...</p> 
             <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/home/acessorios/saboneteira" class="a-btn-add">Adicionar</a> 
+            <a href="/saboneteira" class="a-btn-add">Adicionar</a> 
         </div>
     </div>
     

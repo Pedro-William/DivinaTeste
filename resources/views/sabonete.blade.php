@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="{{ asset('css/atomic/app.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}"> 
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -37,9 +37,9 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/home/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/home/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/home/sair" class="a-dropdown-link">Sair</a>
+                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 
@@ -60,12 +60,12 @@
                 <span></span>
             </button>
             <ul class="m-menu__list" id="menu-list"> 
-                <li><a href="home/sabonetes" class="a-link">SABONETES</a></li>
-                <li><a href="home/aromatizantes" class="a-link">AROMATIZANTES</a></li>
-                <li><a href="home/velas" class="a-link">VELAS</a></li>
-                <li><a href="home/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
-                <li><a href="home/acessorios" class="a-link">ACESSÓRIOS</a></li>
-                <li><a href="home/kits" class="a-link">KITS</a></li>
+                <li><a href="/sabonetes" class="a-link">SABONETES</a></li>
+                <li><a href="/aromatizantes" class="a-link">AROMATIZANTES</a></li>
+                <li><a href="/velas" class="a-link">VELAS</a></li>
+                <li><a href="/oleos essenciais" class="a-link">ESSÊNCIAS</a></li>
+                <li><a href="/acessorios" class="a-link">ACESSÓRIOS</a></li>
+                <li><a href="/kits" class="a-link">KITS</a></li>
             </ul>
         </nav>
     </header>
@@ -82,49 +82,49 @@
             <img src="img/sbnt-argilarosalavanda.png" alt="Sabonete Argila Rosa e Lavanda" class="a-product-img"> 
             <h4 class="a-product-name">Argila rosa e Lavanda</h4> 
             <h3 class="a-product-price">R$ 36,00</h3> 
-            <a href="/home/sabonetes/argila rosa e lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/sabonetes/argila rosa e lavanda" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-argilaverdealecrim.png" alt="Sabonete Argila verde e Alecrim" class="a-product-img">
              <h4 class="a-product-name">Argila verde e Alecrim</h4>
               <h3 class="a-product-price">R$ 38,00</h3>
-            <a href="./home/sabonetes/argila verde e alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="./sabonetes/argila verde e alecrim" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/sbnt-aveiamel.png" alt="Sabonete Aveia e Mel" class="a-product-img"> 
              <h4 class="a-product-name">Aveia e Mel</h4> 
              <h3 class="a-product-price">R$ 38,00</h3>
-            <a href="/home/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
+            <a href="/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-camomila.png" alt="Sabonete Camomila" class="a-product-img"> 
             <h4 class="a-product-name">Camomila</h4> 
             <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/home/sabonetes/camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/sabonetes/camomila" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-canelaand White Floral Save The Date Flyer.png" alt="Sabonete Canela" class="a-product-img">
              <h4 class="a-product-name">Canela</h4> 
              <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/home/sabonete canela" class="a-btn-add">Adicionar</a> 
+            <a href="/sabonete canela" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-carvao.png" alt="Sabonete Carvão ativado e Lavanda" class="a-product-img"> 
             <h4 class="a-product-name">Carvão ativado e Lavanda</h4>
              <h3 class="a-product-price">R$ 38,00</h3> 
-            <a href="/home/sabonetes/carvao ativado e lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/sabonetes/carvao ativado e lavanda" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-cocobaunilha.png" alt="Sabonete Coco e Baunilha" class="a-product-img"> 
             <h4 class="a-product-name">Coco e Baunilha</h4> 
             <h3 class="a-product-price">R$ 38,00</h3>
-            <a href="./home/sabonetes/coco e baunilha" class="a-btn-add">Adicionar</a> 
+            <a href="./sabonetes/coco e baunilha" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card">
              <img src="img/sbnt-laranjacamomila.png" alt="Sabonete Laranja e Camomila" class="a-product-img">
               <h4 class="a-product-name">Laranja e Camomila</h4>
                <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/home/sabonetes/laranja e camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/sabonetes/laranja e camomila" class="a-btn-add">Adicionar</a> 
              </div>
 
     </div>
