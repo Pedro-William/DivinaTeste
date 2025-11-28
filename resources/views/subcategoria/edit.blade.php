@@ -6,7 +6,7 @@
     <title>Editar Subcategoria</title>
 
     {{-- CSS --}}
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/list-styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/form-styles.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('img/logo.png') }}">

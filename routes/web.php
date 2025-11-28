@@ -437,11 +437,11 @@ Route::resource('fornecedor', FornecedorController::class);
 Route::middleware('guest')->group(function () {
     
     // LOGIN
-    Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
+    Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
     
     // REGISTRO (CADASTRO)
-    Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
+    Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
     Route::post('register', [RegisteredUserController::class, 'store']);
 });
 

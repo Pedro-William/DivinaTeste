@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Administrador | Divina Essência</title>
 
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/painel.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('css/atomic/atoms/painel.css') }}">
 
     <link rel="icon" type="image/png" href="{{ asset('img/Logo.png') }}">
 </head>

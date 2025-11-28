@@ -6,16 +6,16 @@
     <title>Vela Hiba - Divina Essência</title>
 
     <link rel="stylesheet" href="{{ asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{ asset('../css/atomic/atoms/buttons.css')}}">
-    <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/search.css')}}">
-    <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/user-options.css')}}">
-    <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/quantity-selector.css')}}"> 
-    <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/breadcrumb.css')}}"> 
-    <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/product-card.css')}}"> 
-    <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/header.css')}}">
-    <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/footer.css')}}">
-    <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/layoutprodutos.css')}}"> 
-    <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/productpage.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('/css/atomic/atoms/buttons.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/atomic/molecules/search.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/atomic/molecules/user-options.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/atomic/molecules/quantity-selector.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('/css/atomic/molecules/breadcrumb.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('/css/atomic/molecules/product-card.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('/css/atomic/organisms/header.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/atomic/organisms/footer.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/atomic/organisms/layoutprodutos.css')}}"> 
+    <link rel="stylesheet" href="{{ asset('/css/atomic/organisms/productpage.css')}}"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css')}}">
 
@@ -27,7 +27,7 @@
         <div class="o-header__top">
             <div class="a-logo">
                 <a href="/home">
-                    <img src="{{ asset('../img/Logo.png" alt="Divina Essência">
+                    <img src="{{ asset('/img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     
@@ -79,7 +79,7 @@
     <section class="o-product-detail">
         
         <div class="m-product-gallery">
-            <img src="{{ asset('../img/vela-hiba.png" alt="Vela de Hiba com embalagem Divina Essência" class="a-main-product-image">
+            <img src="img/vela-hiba.png" alt="Vela de Hiba com embalagem Divina Essência" class="a-main-product-image">
         </div>            <!--MUDAR-->
 
             <!--MUDAR-->
@@ -205,7 +205,7 @@
 </section>
 <div class="whats">
     <a href="https://wa.me/5511913119603" target="_blank">
-      <img src="{{ asset('../img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
+      <img src="/img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
     </a>
 </div>
 
@@ -225,7 +225,7 @@
             
             <div class="m-cart-item" style="display: none;">
                 <div class="a-item-image">
-                    <img src="{{ asset('../img/bucha-vegetal-cart.png" alt="Bucha Vegetal">   <!--MUDAR-->
+                    <img src="img/bucha-vegetal-cart.png" alt="Bucha Vegetal">   <!--MUDAR-->
 
                 </div>
                 <div class="a-item-details">
@@ -314,7 +314,7 @@
         </p>
     </div>
 </footer>
-<script src="{{ asset('../js/script.js"></script>
+<script src="/js/script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

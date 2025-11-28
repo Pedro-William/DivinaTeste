@@ -48,34 +48,21 @@
 
 /* Organisms */
 @import url("/css/atomic/organisms/header.css");
-@import url("/css/atomic/organisms/footer.css");
+@import url("/css/atomic/organisms/baselogin.css");
 @import url("/css/atomic/organisms/proposition.css");
 @import url("/css/atomic/organisms/carrosse.css");
 @import url("/css/atomic/organisms/sobrenos.css");
-@import url("/css/atomic/organisms/baselogin.css");
 @import url("/css/atomic/organisms/bloco.css");
 @import url("/css/atomic/organisms/layoutconfirm.css");
 @import url("/css/atomic/organisms/layoutform.css");
 @import url("/css/atomic/organisms/layoutprodutos.css");
 @import url("/css/atomic/organisms/o-user-dashboard-layout.css");
+@import url("/css/atomic/organisms/footer.css");
 
 
 
 
 
 
-/* adm */
-@import url("/css/atomic/atoms/paragrafos.css");
-@import url("/css/atomic/atoms/painel.css");
-@import url("/css/atomic/atoms/label.css");
-@import url("/css/atomic/atoms/img.css");
-@import url("/css/atomic/atoms/corpo.css");
 
-/* adm */
-@import url("/css/atomic/molecules/ui.css");
-
-/* adm */
-@import url("/css/atomic/organisms/princiapl.css");
-@import url("/css/atomic/organisms/list-styles.css");
-@import url("/css/atomic/organisms/form-styles.css");
 

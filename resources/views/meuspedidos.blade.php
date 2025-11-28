@@ -86,7 +86,7 @@
     
     {{-- Conteúdo atual da view 'Meus Pedidos' --}}
     <div class="breadcrumb">
-        <a href="{{ route('home') }}">Home</a> / <span>Meus Pedidos</span>
+        <a href="/home">Home</a> / <span>Meus Pedidos</span>
     </div>
 
     <h1 class="a-section-title o-page-title">< MEUS PEDIDOS</h1>
@@ -96,9 +96,9 @@
         <nav class="o-sidebar-menu">
             <ul class="m-account-links">
                 {{-- ✅ Links do Sidebar Corrigidos --}}
-                <li class="a-link-item"><a href="{{ route('minhaconta') }}" class="a-link">Minha conta</a></li>
-                <li class="a-link-item"><a href="{{ route('meuspedidos') }}" class="a-link a-link--active">Meus Pedidos</a></li>
-                <li class="a-link-item"><a href="{{ route('favoritos') }}" class="a-link">Meus Favoritos</a></li>
+                <li class="a-link-item"><a href="/minhaconta" class="a-link">Minha conta</a></li>
+                <li class="a-link-item"><a href="/meuspedidos" class="a-link a-link--active">Meus Pedidos</a></li>
+                <li class="a-link-item"><a href="/favoritos" class="a-link">Meus Favoritos</a></li>
                 <li class="a-link-item">
                     <a href="{{ route('logout') }}" class="a-link a-link--logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sair</a>
                 </li>
@@ -162,7 +162,7 @@
             <div class="m-cart-empty-placeholder" id="cart-empty-placeholder">
                 <p class="a-empty-message">Sua sacola está vazia.</p>
                 <i class="bi bi-bag-x a-empty-icon"></i>
-                <a href="{{ route('home') }}" class="a-btn-start-shopping" onclick="closeMiniCart()">Ver Destaques</a>
+                <a href="/home" class="a-btn-start-shopping" onclick="closeMiniCart()">Ver Destaques</a>
             </div>
         </div>
         
