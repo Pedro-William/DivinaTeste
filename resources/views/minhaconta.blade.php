@@ -42,11 +42,12 @@
                     </div>
                 </div>
                 
-                <a href="carrinho.html" class="a-icon-link" id="cart-icon-link">
+                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
                 </a>
                 
-                <a href="meusfavoritos.html" class="a-icon-link">
+                
+                <a href="/favoritos" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
             </div>

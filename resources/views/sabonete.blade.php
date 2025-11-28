@@ -43,11 +43,12 @@
                     </div>
                 </div>
                 
-                <a href="carrinho.html" class="a-icon-link" id="cart-icon-link">
+                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
                 </a>
                 
-                <a href="meusfavoritos.html" class="a-icon-link">
+                
+                <a href="/favoritos" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
             </div>
@@ -82,13 +83,13 @@
             <img src="img/sbnt-argilarosalavanda.png" alt="Sabonete Argila Rosa e Lavanda" class="a-product-img"> 
             <h4 class="a-product-name">Argila rosa e Lavanda</h4> 
             <h3 class="a-product-price">R$ 36,00</h3> 
-            <a href="/sabonetes/argila rosa e lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/argila rosa e lavanda" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-argilaverdealecrim.png" alt="Sabonete Argila verde e Alecrim" class="a-product-img">
              <h4 class="a-product-name">Argila verde e Alecrim</h4>
               <h3 class="a-product-price">R$ 38,00</h3>
-            <a href="./sabonetes/argila verde e alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="/argila verde e alecrim" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/sbnt-aveiamel.png" alt="Sabonete Aveia e Mel" class="a-product-img"> 
@@ -100,7 +101,7 @@
             <img src="img/sbnt-camomila.png" alt="Sabonete Camomila" class="a-product-img"> 
             <h4 class="a-product-name">Camomila</h4> 
             <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/sabonetes/camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/camomila" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-canelaand White Floral Save The Date Flyer.png" alt="Sabonete Canela" class="a-product-img">
@@ -112,19 +113,19 @@
             <img src="img/sbnt-carvao.png" alt="Sabonete Carvão ativado e Lavanda" class="a-product-img"> 
             <h4 class="a-product-name">Carvão ativado e Lavanda</h4>
              <h3 class="a-product-price">R$ 38,00</h3> 
-            <a href="/sabonetes/carvao ativado e lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/carvao ativado e lavanda" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-cocobaunilha.png" alt="Sabonete Coco e Baunilha" class="a-product-img"> 
             <h4 class="a-product-name">Coco e Baunilha</h4> 
             <h3 class="a-product-price">R$ 38,00</h3>
-            <a href="./sabonetes/coco e baunilha" class="a-btn-add">Adicionar</a> 
+            <a href="/coco e baunilha" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card">
              <img src="img/sbnt-laranjacamomila.png" alt="Sabonete Laranja e Camomila" class="a-product-img">
               <h4 class="a-product-name">Laranja e Camomila</h4>
                <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/sabonetes/laranja e camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/laranja e camomila" class="a-btn-add">Adicionar</a> 
              </div>
 
     </div>

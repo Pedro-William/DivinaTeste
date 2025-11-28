@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/productpage.css')}}"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 
@@ -46,11 +48,12 @@
                     </div>
                 </div>
                 
-                <a href="carrinho.html" class="a-icon-link" id="cart-icon-link">
+                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
                 </a>
                 
-                <a href="../meusfavoritos.html" class="a-icon-link">
+                
+                <a href="/favoritos" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
             </div>
@@ -100,9 +103,9 @@
                     <button class="a-qty-btn a-qty-btn--plus" data-action="increment">+</button>
                 </div>
                 
-                <button class="a-btn-buy">
+                <button class="a-btn-buy" id="btn-add-to-cart" data-product-id="10">
                     Comprar
-                </button> 
+                </button>  
             </div>
         </div>
     </section>

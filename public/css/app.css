@@ -1,4 +1,9 @@
 
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -22,12 +27,7 @@
 @import url("/css/atomic/atoms/category.css");
 @import url("/css/atomic/atoms/about.css");
 @import url("/css/atomic/atoms/form-elements");
-/* adm */
-@import url("/css/atomic/atoms/paragrafos.css");
-@import url("/css/atomic/atoms/painel.css");
-@import url("/css/atomic/atoms/label.css");
-@import url("/css/atomic/atoms/img.css");
-@import url("/css/atomic/atoms/corpo.css");
+
 
 
 /* Molecules */
@@ -42,8 +42,7 @@
 @import url("/css/atomic/molecules/layoutcarrinho.css");
 @import url("/css/atomic/molecules/productpage.css");
 @import url("/css/atomic/molecules/quantity-selector.css");
-/* adm */
-@import url("/css/atomic/molecules/ui.css");
+
 
 
 
@@ -59,12 +58,24 @@
 @import url("/css/atomic/organisms/layoutform.css");
 @import url("/css/atomic/organisms/layoutprodutos.css");
 @import url("/css/atomic/organisms/o-user-dashboard-layout.css");
+
+
+
+
+
+
+/* adm */
+@import url("/css/atomic/atoms/paragrafos.css");
+@import url("/css/atomic/atoms/painel.css");
+@import url("/css/atomic/atoms/label.css");
+@import url("/css/atomic/atoms/img.css");
+@import url("/css/atomic/atoms/corpo.css");
+
+/* adm */
+@import url("/css/atomic/molecules/ui.css");
+
 /* adm */
 @import url("/css/atomic/organisms/princiapl.css");
 @import url("/css/atomic/organisms/list-styles.css");
 @import url("/css/atomic/organisms/form-styles.css");
-
-
-
-
 

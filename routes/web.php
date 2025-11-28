@@ -10,6 +10,10 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\auth\AuthenticatedSessionController;
 use App\Http\Controllers\auth\RegisteredUserController;
 
+use App\Http\Controllers\CarrinhoController;
+use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\PedidoController; // Para gerenciar 'Meus Pedidos'
+
 // Rotas Principais
 Route::get('/', function () {
     return view('home');
@@ -32,6 +36,10 @@ Route::get('/confirmacao', function () {
 
 Route::get('/conta', function () {
     return view('conta');
+});
+
+Route::get('/meus pedidos', function () {
+    return view('meuspedidos');
 });
 
 
@@ -471,3 +479,35 @@ Route::middleware('auth')->group(function () {
         return view('conta.favoritos'); 
     })->name('favoritos');
 });
+
+//LOGICA COMPRA CARRINHO
+
+// --- CARRINHO (CRUD BÁSICO) ---
+// Visualizar a página de revisão completa
+Route::get('/carrinho', [CarrinhoController::class, 'index'])->name('carrinho.index');
+// AJAX: Adicionar item
+Route::post('/carrinho/adicionar', [CarrinhoController::class, 'adicionar'])->name('carrinho.adicionar');
+// AJAX: Remover item
+Route::post('/carrinho/remover/{id}', [CarrinhoController::class, 'remover'])->name('carrinho.remover');
+// AJAX: Atualizar item (Quantidade)
+Route::post('/carrinho/atualizar/{id}', [CarrinhoController::class, 'atualizar'])->name('carrinho.atualizar');
+// AJAX: Obter dados JSON para o Mini Carrinho (Overlay)
+Route::get('/carrinho/json', [CarrinhoController::class, 'getCartJson'])->name('carrinho.json');
+
+// --- CHECKOUT (3 ETAPAS) ---
+Route::prefix('checkout')->group(function () {
+    // Etapa 1: Dados do Usuário (Login/Convidado)
+    Route::get('/', [CheckoutController::class, 'userData'])->name('checkout.user_data');
+    Route::post('/store-user', [CheckoutController::class, 'storeUser'])->name('checkout.store_user');
+
+    // Etapa 2: Endereço de Entrega
+    Route::get('/endereco', [CheckoutController::class, 'addressData'])->name('checkout.address_data');
+    Route::post('/store-address', [CheckoutController::class, 'storeAddress'])->name('checkout.store_address');
+
+    // Etapa 3: Pagamento (Pix ou Cartão)
+    Route::get('/pagamento', [CheckoutController::class, 'paymentData'])->name('checkout.payment_data');
+    Route::post('/processar', [CheckoutController::class, 'processar'])->name('checkout.processar');
+});
+
+// Finalização
+Route::get('/pedido-finalizado', [CheckoutController::class, 'sucesso'])->name('pedido.sucesso');

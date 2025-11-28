@@ -470,3 +470,127 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. Adicione aqui a inicialização para outras máscaras/eventos DOM, se necessário.
 
 });
+
+function renderMiniCart(data) {
+    const listContainer = document.querySelector('.m-cart-items-list');
+    const footer = document.querySelector('.m-cart-footer');
+    const totalValueElement = document.querySelector('.a-total-value');
+    
+    listContainer.innerHTML = ''; // Limpa itens existentes
+
+    if (Object.keys(data.carrinho).length > 0) {
+        
+        // 1. ITERAÇÃO E INJEÇÃO DOS ITENS
+        for (const productId in data.carrinho) {
+            const item = data.carrinho[productId];
+            
+            // Seu JS deve injetar o HTML dinâmico:
+            const itemHtml = `
+                <div class="m-cart-item" data-id="${productId}">
+                    <div class="a-item-image">
+                        <img src="img/${item.imagem_nome || 'default.png'}" alt="${item.nome}">
+                    </div>
+                    <div class="a-item-details">
+                        <p class="a-item-name">${item.nome}</p>
+                        <div class="m-item-quantity-control">
+                            <button class="a-qty-btn a-qty-btn--minus" data-action="minus" data-id="${productId}">-</button>
+                            <span class="a-item-qty">${item.quantidade}</span>
+                            <button class="a-qty-btn a-qty-btn--plus" data-action="plus" data-id="${productId}">+</button>
+                        </div>
+                    </div>
+                    <div class="a-item-price-remove">
+                        <p class="a-item-price">R$ ${(item.preco * item.quantidade).toFixed(2).replace('.', ',')}</p>
+                        <button class="a-remove-btn" data-id="${productId}"><i class="bi bi-trash"></i></button>
+                    </div>
+                </div>
+            `;
+            listContainer.insertAdjacentHTML('beforeend', itemHtml);
+        }
+
+        // 2. MOSTRAR FOOTER E TOTAIS
+        totalValueElement.textContent = `R$ ${data.total}`;
+        footer.style.display = 'block';
+        
+        // 3. INJETA OS LINKS DINÂMICOS NOS BOTÕES
+        document.querySelector('.a-btn-confirm').outerHTML = `<a href="${"{{ route('carrinho.index') }}"}" class="a-btn-confirm">Editar Sacola</a>`;
+        document.querySelector('.a-btn-finalizar').outerHTML = `<a href="${"{{ route('checkout.user_data') }}"}" class="a-btn-finalizar">Finalizar pedido</a>`;
+
+    } else {
+        // MOSTRAR MENSAGEM DE SACOLA VAZIA
+        footer.style.display = 'none';
+        listContainer.innerHTML = document.querySelector('.m-cart-empty-placeholder').outerHTML;
+    }
+    
+    // 4. ATTACH LISTENERS DE REMOÇÃO AQUI (usando a função removeCartItem via AJAX)
+    attachMiniCartListeners();
+}
+
+
+//carrinho
+    document.addEventListener('DOMContentLoaded', function() {
+        const btnAddToCart = document.getElementById('btn-add-to-cart');
+        const quantityInput = document.getElementById('product-quantity-input');
+        
+        if (btnAddToCart) {
+            btnAddToCart.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                const productId = this.getAttribute('data-product-id');
+                const quantity = parseInt(quantityInput.value);
+
+                if (!productId || quantity <= 0) {
+                    console.error("ID do produto ou quantidade inválida.");
+                    alert("A quantidade deve ser no mínimo 1.");
+                    return;
+                }
+
+                const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+                // Monta os dados
+                const formData = new URLSearchParams();
+                formData.append('produto_id', productId);
+                formData.append('quantidade', quantity);
+                formData.append('_token', csrfToken); 
+
+                // Envia a requisição AJAX para a rota '/carrinho/adicionar'
+                fetch("/carrinho/adicionar", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'X-CSRF-TOKEN': csrfToken 
+                    },
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message + '\nItens na sacola: ' + data.total_itens);
+                        // ⚠️ Aqui você deve chamar a função para ATUALIZAR VISUALMENTE o Mini Cart
+                        // Ex: updateMiniCart(data.carrinho, data.novo_total);
+                        // E abrir o mini cart.
+                    } else {
+                        alert('Erro ao adicionar: ' + data.message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro de rede ou servidor:', error);
+                    alert('Ocorreu um erro ao adicionar o produto. Verifique o console.');
+                });
+            });
+        }
+        
+        // Lógica de incremento/decremento de quantidade (do seu código original)
+        document.querySelectorAll('.a-qty-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = document.getElementById('product-quantity-input');
+                let value = parseInt(input.value);
+                const action = this.getAttribute('data-action');
+
+                if (action === 'decrement' && value > 1) {
+                    input.value = value - 1;
+                } else if (action === 'increment') {
+                    input.value = value + 1;
+                }
+            });
+        });
+    });

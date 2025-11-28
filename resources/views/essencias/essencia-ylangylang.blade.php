@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/productpage.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>
@@ -48,11 +50,12 @@
                     </div>
                 </div>
 
-                <a href="carrinho.html" class="a-icon-link" id="cart-icon-link">
+                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
                 </a>
-
-                <a href="meusfavoritos.html" class="a-icon-link">
+                
+                
+                <a href="/favoritos" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
             </div>
@@ -115,9 +118,9 @@
                         <button class="a-qty-btn a-qty-btn--plus" data-action="increment">+</button>
                     </div>
 
-                    <button class="a-btn-buy">
-                        Comprar
-                    </button>
+                    <button class="a-btn-buy" id="btn-add-to-cart" data-product-id="28">
+                    Comprar
+                </button> 
                 </div>
             </div>
         </section>
@@ -138,7 +141,7 @@
         <h4 class="a-product-name">Sabonete Argila Rosa e Lavanda</h4>
         <p class="a-product-size">110g</p>
         <h3 class="a-product-price">R$ 27,80</h3>
-        <a href="/argila-rosa-e-lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/argila rosa e lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -146,7 +149,7 @@
         <h4 class="a-product-name">Bucha Vegetal</h4>
         <p class="a-product-size">...</p>
         <h3 class="a-product-price">R$ 19,20</h3>
-        <a href="/bucha-vegetal" class="a-btn-add">Adicionar</a>
+        <a href="/bucha vegetal" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -162,7 +165,7 @@
         <h4 class="a-product-name">Blue Tansy</h4>
         <p class="a-product-size">140g</p>
         <h3 class="a-product-price">R$ 23,40</h3>
-        <a href="/blue-tansy" class="a-btn-add">Adicionar</a>
+        <a href="/blue tansy" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -170,7 +173,7 @@
         <h4 class="a-product-name">Sabonete Argila Rosa e Lavanda 2</h4>
         <p class="a-product-size">110g</p>
         <h3 class="a-product-price">R$ 27,80</h3>
-        <a href="/argila-rosa-e-lavanda-2" class="a-btn-add">Adicionar</a>
+        <a href="/argila rosa e lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -178,7 +181,7 @@
         <h4 class="a-product-name">Bucha Vegetal 2</h4>
         <p class="a-product-size">...</p>
         <h3 class="a-product-price">R$ 19,20</h3>
-        <a href="/bucha-vegetal-2" class="a-btn-add">Adicionar</a>
+        <a href="/bucha vegetal" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -186,7 +189,7 @@
         <h4 class="a-product-name">Citronela 2</h4>
         <p class="a-product-size">250ml</p>
         <h3 class="a-product-price">R$ 32,40</h3>
-        <a href="/citronela-2" class="a-btn-add">Adicionar</a>
+        <a href="/citronela" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
@@ -194,7 +197,7 @@
         <h4 class="a-product-name">Blue Tansy 2</h4>
         <p class="a-product-size">140g</p>
         <h3 class="a-product-price">R$ 23,40</h3>
-        <a href="/blue-tansy-2" class="a-btn-add">Adicionar</a>
+        <a href="/blue tansy" class="a-btn-add">Adicionar</a>
     </div>
 </div>
 
