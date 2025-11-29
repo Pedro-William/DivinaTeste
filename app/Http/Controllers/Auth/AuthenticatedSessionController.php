@@ -52,7 +52,7 @@ class AuthenticatedSessionController extends Controller
             return redirect()->intended(route('painel', absolute: false));
         } else {
             // Se não for admin, redireciona para a página principal (home do app)
-            return redirect()->intended(route('welcome', absolute: false));
+            return redirect()->intended(route('home', absolute: false));
         }
     }
 

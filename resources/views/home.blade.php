@@ -160,7 +160,7 @@
                  </div>
             <div class="m-product-card"> 
                 <img src="img/acessorio-ecobag.png" alt="Bucha Vegetal 2" class="a-product-img"> 
-                <h4 class="a-product-name">Bucha Vegetal </h4> 
+                <h4 class="a-product-name">Ecobag </h4> 
                 <p class="a-product-size">...</p>
                  <h3 class="a-product-price">R$ 60,00</h3> 
             <a href="/ecobag" class="a-btn-add">Adicionar</a> 
@@ -268,7 +268,7 @@
                    </div>
               <div class="m-product-card"> 
                   <img src="img/acessorio-ecobag.png" alt="Bucha Vegetal 2" class="a-product-img"> 
-                  <h4 class="a-product-name">Bucha Vegetal </h4> 
+                  <h4 class="a-product-name">Ecobag </h4> 
                   <p class="a-product-size">...</p>
                    <h3 class="a-product-price">R$ 60,00</h3> 
               <a href="/ecobag" class="a-btn-add">Adicionar</a> 

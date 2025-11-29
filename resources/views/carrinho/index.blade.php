@@ -202,7 +202,7 @@
                     <h4 class="alert-heading">Sua sacola está vazia!</h4>
                     <p>Parece que você não adicionou nenhum produto ainda. Vamos às compras?</p>
                     <hr>
-                    <a href="{{ route('home') }}" class="btn btn-primary">Ver Destaques</a>
+                    <a href="/home" class="btn btn-primary">Ver Destaques</a>
                 </div>
             @endif
         </div>
