@@ -31,7 +31,7 @@
             <div class="a-logo">
                 {{-- ✅ Usando asset() para imagem e route() para rota --}}
                 <a href="/home">
-                    <img src="{{ asset('img/Logo.png') }}" alt="Divina Essência">
+                    <img src="img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     
