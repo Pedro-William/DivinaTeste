@@ -27,7 +27,11 @@
         <div class="o-header__top">
             <div class="a-logo">
                 <a href="/home">
+<<<<<<< HEAD
                     <img src="/img/Logo.png" alt="Divina Essência">
+=======
+                    <img src="img/Logo.png" alt="Divina Essência">
+>>>>>>> 33cabe6764b33cbd2641b97af95ac47c9ac5a5d5
                 </a>
             </div>
     
