@@ -201,14 +201,14 @@
         </button>
 
         <div class="m-category-row">
-            <a href="./linhas/linha-lavanda.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/lavandalinha.png" alt="Linha Lavanda" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-capimlimao.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/capimlimao-linha.png" alt="Linha Capim Limão" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-eucalipto.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/eucalipto-linha.png" alt="Linha Eucalipto" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-camomila.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/camomila-linha.png" alt="Linha Camomila" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-copaiba.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/copaiba-linha.png" alt="Linha Lavanda 2" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-melaleuca.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/melaleuca-linha.png" alt="Linha Capim Limão 2" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-alecrim.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/alecrim-linha.png" alt="Linha Eucalipto 2" class="a-banner-img"> </div> </a>
-            <a href="./linhas/linha-ylanglang.html" class="m-category-card"> <div class="m-banner-content"> <img src="img/ylanglang-linha.png" alt="Linha Camomila 2" class="a-banner-img"> </div> </a>
+            <a href="/linha lavanda" class="m-category-card"> <div class="m-banner-content"> <img src="img/lavandalinha.png" alt="Linha Lavanda" class="a-banner-img"> </div> </a>
+            <a href="/linha capimlimao" class="m-category-card"> <div class="m-banner-content"> <img src="img/capimlimao-linha.png" alt="Linha Capim Limão" class="a-banner-img"> </div> </a>
+            <a href="/linha eucalipto" class="m-category-card"> <div class="m-banner-content"> <img src="img/eucalipto-linha.png" alt="Linha Eucalipto" class="a-banner-img"> </div> </a>
+            <a href="/linha camomila" class="m-category-card"> <div class="m-banner-content"> <img src="img/camomila-linha.png" alt="Linha Camomila" class="a-banner-img"> </div> </a>
+            <a href="/linha copaiba" class="m-category-card"> <div class="m-banner-content"> <img src="img/copaiba-linha.png" alt="Linha Lavanda 2" class="a-banner-img"> </div> </a>
+            <a href="/linha melaleuca" class="m-category-card"> <div class="m-banner-content"> <img src="img/melaleuca-linha.png" alt="Linha Capim Limão 2" class="a-banner-img"> </div> </a>
+            <a href="/linha alecrim" class="m-category-card"> <div class="m-banner-content"> <img src="img/alecrim-linha.png" alt="Linha Eucalipto 2" class="a-banner-img"> </div> </a>
+            <a href="/linha ylanglang" class="m-category-card"> <div class="m-banner-content"> <img src="img/ylanglang-linha.png" alt="Linha Camomila 2" class="a-banner-img"> </div> </a>
         </div>
         
         <button class="a-carousel-control a-carousel-control--next" aria-label="Próximo">

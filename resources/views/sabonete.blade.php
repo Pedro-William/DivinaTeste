@@ -21,7 +21,7 @@
         <div class="o-header__top">
             <div class="a-logo">
                 <a href="/home">
-                    <img src="public/img/Logo.png" alt="Divina Essência">
+                    <img src="img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     
@@ -101,7 +101,7 @@
             <img src="img/sbnt-camomila.png" alt="Sabonete Camomila" class="a-product-img"> 
             <h4 class="a-product-name">Camomila</h4> 
             <h3 class="a-product-price">R$ 30,00</h3> 
-            <a href="/camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/Sabonete camomila" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/sbnt-canelaand White Floral Save The Date Flyer.png" alt="Sabonete Canela" class="a-product-img">

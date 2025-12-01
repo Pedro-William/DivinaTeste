@@ -27,7 +27,7 @@
         <div class="o-header__top">
             <div class="a-logo">
                 <a href="/home">
-                    <img src="{{ asset('../img/Logo.png" alt="Divina Essência">
+                    <img src="/img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     
@@ -80,7 +80,7 @@
     <section class="o-product-detail">
         
         <div class="m-product-gallery">
-            <img src="{{ asset('../img/vela-bluetansy.png" alt="Vela Bluetansy com embalagem Divina Essência" class="a-main-product-image">
+            <img src="/img/vela-bluetansy.png" alt="Vela Bluetansy com embalagem Divina Essência" class="a-main-product-image">
         </div>            <!--MUDAR-->
 
             <!--MUDAR-->
@@ -212,7 +212,7 @@
 <!---->
 <div class="whats">
     <a href="https://wa.me/5511913119603" target="_blank">
-      <img src="{{ asset('../img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
+      <img src="/img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
     </a>
 </div>
 
@@ -321,7 +321,7 @@
         </p>
     </div>
 </footer>
-<script src="../js/script.js"></script>
+<script src="/js/script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

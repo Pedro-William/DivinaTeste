@@ -149,37 +149,37 @@ Route::get('/difusor ', function () {
 
 // --- ROTAS DE AROMATIZANTES (Sub-itens) ---
 
-Route::get('/alecrim', function () {
+Route::get('/aromatizante alecrim', function () {
     return view('aromatizantes.aromatizante-alecrim');
 });
 
-Route::get('/baunilha', function () {
+Route::get('/aromatizante baunilha', function () {
     return view('aromatizantes.aromatizante-baunilha');
 });
 
-Route::get('/capim limao', function () {
+Route::get('/aromatizante capim limao', function () {
     return view('aromatizantes.aromatizante-capimlimao');
 });
 
-Route::get('/citronela', function () {
+Route::get('/aromatizante citronela', function () {
     return view('aromatizantes.aromatizante-citronela');
 });
 
 
-Route::get('/melaleuca', function () {
+Route::get('/aromatizante melaleuca', function () {
     return view('aromatizantes.aromatizante-melaleuca');
 });
 
-Route::get('/aromatizante de canela', function () {
+Route::get('/aromatizante canela', function () {
     return view('aromatizantes.aromatizante-canela');
 });
 
-Route::get('/aromatizante de hortela', function () {
+Route::get('/aromatizante hortela', function () {
     return view('aromatizantes.aromatizante-hortela');
 });
 
 
-Route::get('/aromatizador de lavanda', function () {
+Route::get('/aromatizante lavanda', function () {
     return view('aromatizantes.aromatizante-lavanda');
 });
 
@@ -192,35 +192,35 @@ Route::get('/aromatizador de lavanda', function () {
 
 // --- ROTAS DE ESSÊNCIAS (NOVAS) ---
 
-Route::get('/alecrim', function () {
+Route::get('/essencia alecrim', function () {
     return view('essencias.essencia-alecrim');
 });
 
-Route::get('/camomila romana', function () {
+Route::get('/essencia camomila romana', function () {
     return view('essencias.essencia-camomilaromana');
 });
 
-Route::get('/citronela', function () {
+Route::get('/essencia citronela', function () {
     return view('essencias.essencia-citronela');
 });
 
-Route::get('/copaiba', function () {
+Route::get('/essencia copaiba', function () {
     return view('essencias.essencia-copaiba');
 });
 
-Route::get('/eucalipto', function () {
+Route::get('/essencia eucalipto', function () {
     return view('essencias.essencia-eucalipto');
 });
 
-Route::get('/lavanda', function () {
+Route::get('/essencia lavanda', function () {
     return view('essencias.essencia-lavanda');
 });
 
-Route::get('/melaleuca', function () {
+Route::get('/essencia melaleuca', function () {
     return view('essencias.essencia-melaleuca');
 });
 
-Route::get('/ylang ylang', function () {
+Route::get('/essencia ylang ylang', function () {
     return view('essencias.essencia-ylangylang');
 });
 
@@ -229,35 +229,35 @@ Route::get('/ylang ylang', function () {
 
 // --- ROTAS DE KITS (NOVAS) ---
 
-Route::get('/copaiba', function () {
+Route::get('/kits copaiba', function () {
     return view('kits.kit-copaiba');
 });
 
-Route::get('/blue tansy', function () {
+Route::get('/kits blue tansy', function () {
     return view('kits.kits-bluetansy');
 });
 
-Route::get('/camomila', function () {
+Route::get('/kits camomila', function () {
     return view('kits.kits-camomila');
 });
 
-Route::get('/canela', function () {
+Route::get('/kits canela', function () {
     return view('kits.kits-canela');
 });
 
-Route::get('/capim limao', function () {
+Route::get('/kits capim limao', function () {
     return view('kits.kits-capimlimao');
 });
 
-Route::get('/lavanda', function () {
+Route::get('/kits lavanda', function () {
     return view('kits.kits-lavanda');
 });
 
-Route::get('/melaleuca', function () {
+Route::get('/kits melaleuca', function () {
     return view('kits.kits-melaleuca');
 });
 
-Route::get('/ylang ylang', function () {
+Route::get('/kits ylang ylang', function () {
     return view('kits.kits-ylanglang');
 });
 
@@ -266,35 +266,35 @@ Route::get('/ylang ylang', function () {
 
 // --- ROTAS DE LINHAS (NOVAS) ---
 
-Route::get('/alecrim', function () {
+Route::get('/linha alecrim', function () {
     return view('linhas.linha-alecrim');
 });
 
-Route::get('/camomila', function () {
+Route::get('/linha camomila', function () {
     return view('linhas.linha-camomila');
 });
 
-Route::get('/capim limao', function () {
+Route::get('/linha capim limao', function () {
     return view('linhas.linha-capimlimao');
 });
 
-Route::get('/copaiba', function () {
+Route::get('/linha copaiba', function () {
     return view('linhas.linha-copaiba');
 });
 
-Route::get('/eucalipto', function () {
+Route::get('/linha eucalipto', function () {
     return view('linhas.linha-eucalipto');
 });
 
-Route::get('/lavanda', function () {
+Route::get('/linha lavanda', function () {
     return view('linhas.linha-lavanda');
 });
 
-Route::get('/melaleuca', function () {
+Route::get('/linha melaleuca', function () {
     return view('linhas.linha-melaleuca');
 });
 
-Route::get('/ylang ylang', function () {
+Route::get('/linha ylang ylang', function () {
     return view('linhas.linha-ylanglang');
 });
 
@@ -313,7 +313,7 @@ Route::get('/argila verde e alecrim', function () {
 });
 
 
-Route::get('/camomila', function () {
+Route::get('/Sabonete camomila', function () {
     return view('sabonetes.sabonete-camomila');
 });
 
@@ -350,28 +350,28 @@ Route::get('/sabonete canela', function () {
 
 // --- ROTAS DE VELAS ---
 
-Route::get('/alecrim', function () {
+Route::get('/vela alecrim', function () {
     return view('velas.vela-alecrim');
 });
 
-Route::get('/blue tansy', function () {
+Route::get('/vela blue tansy', function () {
     return view('velas.vela-bluetansy');
 });
 
-Route::get('/camomila', function () {
+Route::get('/vela camomila', function () {
     return view('velas.vela-camomila');
 });
 
-Route::get('/capim limao', function () {
+Route::get('/ vela capim limao', function () {
     return view('velas.vela-capimlimao');
 });
 
-Route::get('/eucalipto', function () {
+Route::get('/vela eucalipto', function () {
     return view('velas.vela-eucalipto');
 });
 
 
-Route::get('/lavanda', function () {
+Route::get('/vela lavanda', function () {
     return view('velas.vela-lavanda');
 });
 
@@ -379,7 +379,7 @@ Route::get('/vela hiba', function () {
     return view('velas.vela-hiba');
 });
 
-Route::get('/vela de hortela e pimenta', function () {
+Route::get('/vela hortela e pimenta', function () {
     return view('velas.vela-hortelapimenta');
 });
 

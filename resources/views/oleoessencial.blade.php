@@ -77,56 +77,56 @@
              <h4 class="a-product-name">Alecrim</h4> 
              <p class="a-product-size">10ml</p>
               <h3 class="a-product-price">R$ 50,00</h3> 
-            <a href="/alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia alecrim" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/essencia-ylangglang.png" alt="Óleo essencial Ylang glang" class="a-product-img"> 
              <h4 class="a-product-name">Ylang Ylang</h4> 
              <p class="a-product-size">10ml</p>
               <h3 class="a-product-price">R$ 53,90</h3> 
-            <a href="/ylang ylang" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia ylang ylang" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card">
              <img src="img/essencia-camomilaromana.png" alt="Óleo essencial Camomila Romana" class="a-product-img">
               <h4 class="a-product-name">Camomila Romana</h4>
                <p class="a-product-size">10ml</p> 
               <h3 class="a-product-price">R$ 56,00</h3>
-            <a href="/camomila romana" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia camomila romana" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/essencia-citronela.png" alt="Óleo essencial Citronela" class="a-product-img">
               <h4 class="a-product-name">Citronela</h4> 
               <p class="a-product-size">10ml</p> 
               <h3 class="a-product-price">R$ 52,90</h3>
-            <a href="/citronela" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia citronela" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card"> 
             <img src="img/essencia-copaiba.png" alt="Óleo essencial Copaíba" class="a-product-img"> 
             <h4 class="a-product-name">Copaíba</h4>
              <p class="a-product-size">10ml</p> 
              <h3 class="a-product-price">R$ 54,80</h3> 
-            <a href="/copaiba" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia copaiba" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/essencia-eucalipto.png" alt="Óleo essencial Eucalipto" class="a-product-img"> 
             <h4 class="a-product-name">Eucalipto</h4>
              <p class="a-product-size">10ml</p>
               <h3 class="a-product-price">R$ 55,00</h3> 
-            <a href="/eucalipto" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia eucalipto" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/essencia-lavanda.png" alt="Óleo essencial Lavanda" class="a-product-img">
              <h4 class="a-product-name">Lavanda</h4> 
              <p class="a-product-size">10ml</p> 
              <h3 class="a-product-price">R$ 60,00</h3> 
-            <a href="/lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia lavanda" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/essencia-melaleuca.png" alt="Óleo essencial Melaleuca" class="a-product-img"> 
             <h4 class="a-product-name">Melaleuca</h4> 
             <p class="a-product-size">10ml</p> 
             <h3 class="a-product-price">R$ 55,00</h3> 
-            <a href="/melaleuca" class="a-btn-add">Adicionar</a> 
+            <a href="/essencia melaleuca" class="a-btn-add">Adicionar</a> 
          </div>
     </div>
     
@@ -242,7 +242,7 @@
         </p>
     </div>
 </footer>
-<script src="js/script.js"></script>
+<script src="/js/script.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

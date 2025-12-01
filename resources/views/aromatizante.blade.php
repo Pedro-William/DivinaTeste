@@ -78,27 +78,27 @@
              <h4 class="a-product-name">Canela</h4>
               <p class="a-product-size">250ml</p> 
              <h3 class="a-product-price">R$ 31,00</h3> 
-            <a href="/aromatizante de canela" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante canela" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card">
              <img src="img/aroma-citronela.png" alt="Aromatizador de Citronela" class="a-product-img"> 
              <h4 class="a-product-name">Citronela</h4> 
              <p class="a-product-size">250ml</p> 
              <h3 class="a-product-price">R$ 32,40</h3> 
-            <a href="/citronela" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante citronela" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/aroma-hortela.png" alt="Aromatizador de Hortelã" class="a-product-img">
              <h4 class="a-product-name">Hortelã</h4> <p class="a-product-size">250ml</p> 
              <h3 class="a-product-price">R$ 35,00</h3> 
-            <a href="/aromatizante de hortela" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante hortela" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/aroma-lavanda.png" alt="Aromatizador de Lavanda" class="a-product-img"> 
             <h4 class="a-product-name">Lavanda</h4> 
             <p class="a-product-size">250ml</p> 
             <h3 class="a-product-price">R$ 40,00</h3>
-            <a href="/aromatizador de lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante lavanda" class="a-btn-add">Adicionar</a> 
         </div>
         
         <div class="m-product-card"> 
@@ -106,28 +106,28 @@
             <h4 class="a-product-name">Alecrim</h4> 
             <p class="a-product-size">250ml</p> 
             <h3 class="a-product-price">R$ 33,70</h3>
-            <a href="/alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante alecrim" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/aroma-melaleuca.png" alt="Aromatizador de Melaleuca" class="a-product-img">
              <h4 class="a-product-name">Melaleuca</h4> 
              <p class="a-product-size">250ml</p>
               <h3 class="a-product-price">R$ 36,90</h3>
-            <a href="/melaleuca" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante melaleuca" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/aroma-baunilha.png" alt="Aromatizador de Baunilha" class="a-product-img"> 
             <h4 class="a-product-name">Baunilha</h4> 
             <p class="a-product-size">250ml</p> 
             <h3 class="a-product-price">R$ 40,00</h3>
-            <a href="/baunilha" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante baunilha" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/aroma-capimlimao.png" alt="Aromatizador de Capim Limão" class="a-product-img">
              <h4 class="a-product-name">Capim Limão</h4>
               <p class="a-product-size">250ml</p> 
              <h3 class="a-product-price">R$ 34,00</h3>
-            <a href="/capim limao" class="a-btn-add">Adicionar</a> 
+            <a href="/aromatizante capim limao" class="a-btn-add">Adicionar</a> 
              </div>
     </div>
     

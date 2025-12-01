@@ -31,7 +31,7 @@
             <div class="a-logo">
                 {{-- ✅ Usando asset() para imagem e route() para rota --}}
                 <a href="/home">
-                    <img src="{{ asset('img/Logo.png') }}" alt="Divina Essência">
+                    <img src="/img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     
@@ -85,7 +85,7 @@
     <section class="o-product-detail">
         
         <div class="m-product-gallery">
-            <img src="{{ asset('img/acessorio-ecobag.png') }}" alt="Ecobag com embalagem Divina Essência" class="a-main-product-image">
+            <img src="/img/acessorio-ecobag.png" alt="Ecobag com embalagem Divina Essência" class="a-main-product-image">
         </div>
 
         <div class="m-product-info">
@@ -121,11 +121,87 @@
     
     </main>
     
-    {{-- Seção NOVIDADES (Produtos Relacionados) omitida para brevidade --}}
+     <section class="o-product-grid" id="novidades">
+  <h2 class="a-section-title">NOVIDADES</h2>
+  
+    <div class="m-carousel-view" id="carousel-novidades">
+
+        <button class="a-carousel-control a-carousel-control--prev" aria-label="Anterior">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="m-product-row">
+            <div class="m-product-card">
+                 <img src="../img/sbnt-argilarosalavanda.png" alt="Sabonete Argila Rosa e Lavanda" class="a-product-img">
+                  <h4 class="a-product-name">Sabonete Argila Rosa e Lavanda</h4> 
+                  <p class="a-product-size">110g</p>
+                   <h3 class="a-product-price">R$ 38,00</h3> 
+                    <a href="/argila rosa e lavanda" class="a-btn-add">Adicionar</a> 
+                </div>
+            <div class="m-product-card">
+                 <img src="../img/acessorio-buchavegetal.png" alt="Bucha Vegetal" class="a-product-img"> 
+                 <h4 class="a-product-name">Bucha Vegetal</h4> 
+                 <p class="a-product-size">...</p> 
+                 <h3 class="a-product-price">R$ 19,20</h3> 
+            <a href="/esponja vegetal" class="a-btn-add">Adicionar</a> 
+                 </div>
+            <div class="m-product-card"> 
+                <img src="../img/aroma-citronela.png" alt="Aromatizador Citronela" class="a-product-img"> 
+                <h4 class="a-product-name">Citronela</h4> 
+                <p class="a-product-size">250ml</p> 
+                <h3 class="a-product-price">R$ 32,40</h3> 
+            <a href="./citronela" class="a-btn-add">Adicionar</a> 
+            </div>
+            <div class="m-product-card"> 
+                <img src="../img/vela-bluetansy.png" alt="Vela Blue Tansy" class="a-product-img">
+                 <h4 class="a-product-name">Blue Tansy</h4>
+                  <p class="a-product-size">140g</p> 
+                  <h3 class="a-product-price">R$ 23,40</h3> 
+            <a href="/blue tansy" class="a-btn-add">Adicionar</a> 
+                </div>
+            <div class="m-product-card">
+                 <img src="../img/sbnt-aveiamel.png" alt="Sabonete Argila Rosa e Lavanda 2" class="a-product-img">
+                  <h4 class="a-product-name">Sabonete Aveia e Mel</h4> 
+                  <p class="a-product-size">110g</p> 
+                  <h3 class="a-product-price">R$ 38,00</h3> 
+            <a href="/Sabonete Aveia e Mel" class="a-btn-add">Adicionar</a> 
+                 </div>
+            <div class="m-product-card"> 
+                <img src="../img/acessorio-ecobag.png" alt="Bucha Vegetal 2" class="a-product-img"> 
+                <h4 class="a-product-name">Ecobag</h4> 
+                <p class="a-product-size">...</p>
+                 <h3 class="a-product-price">R$ 60,00</h3> 
+            <a href="/ecobag" class="a-btn-add">Adicionar</a> 
+                </div>
+            <div class="m-product-card"> 
+                <img src="../img/aroma-citronela.png" alt="Aromatizador Citronela 2" class="a-product-img">
+                 <h4 class="a-product-name">Citronela </h4> 
+                 <p class="a-product-size">250ml</p> 
+                 <h3 class="a-product-price">R$ 32,40</h3> 
+            <a href="/citronela" class="a-btn-add">Adicionar</a> 
+                 </div>
+            <div class="m-product-card"> 
+                <img src="../img/vela-bluetansy.png" alt="Vela Blue Tansy 2" class="a-product-img">
+                 <h4 class="a-product-name">Blue Tansy </h4> 
+                 <p class="a-product-size">140g</p> 
+                 <h3 class="a-product-price">R$ 23,40</h3>
+            <a href="/blue tansy" class="a-btn-add">Adicionar</a> 
+                 </div>
+        </div>
+
+        <button class="a-carousel-control a-carousel-control--next" aria-label="Próximo">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+
+        <div class="m-carousel-indicators" aria-label="Navegação do carrossel Novidades">
+            </div>
+
+    </div>
+</section>
     
     <div class="whats">
         <a href="https://wa.me/5511913119603" target="_blank">
-          <img src="{{ asset('img/wppsemfundo.png') }}" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
+          <img src="/img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
         </a>
     </div>
 
@@ -155,7 +231,7 @@
 
 {{-- Lógica de Carrinho (DEVE ESTAR EM resources/js/script.js) --}}
 
-<script src="../js/script.js"></script>
+<script src="/js/script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>

@@ -27,7 +27,7 @@
         <div class="o-header__top">
             <div class="a-logo">
                 <a href="/home">
-                    <img src="{{ asset('/img/Logo.png" alt="Divina Essência">
+                    <img src="/img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Óleo Essencial Cintronela- Divina Essência</title>
 
-    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+      <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/atoms/buttons.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/search.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/user-options.css')}}">

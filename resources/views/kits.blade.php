@@ -21,7 +21,7 @@
         <div class="o-header__top">
             <div class="a-logo">
                 <a href="/home">
-                    <img src="img/Logo.png" alt="Divina Essência">
+                    <img src="/img/Logo.png" alt="Divina Essência">
                 </a>
             </div>
     
@@ -84,56 +84,56 @@
                 <img src="img/kits-bluetansy.png" alt="Kit Bem-Estar Lavanda (Óleo e Vela)" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Blue Tansy</h4> 
                 <h3 class="a-product-price">R$ 149,90</h3> 
-                <a href="/blue tansy" class="a-btn-add">Adicionar</a> 
+                <a href="/kits blue tansy" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-camomila.png" alt="Kit Aromatização (Difusor e Spray)" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Camomila</h4> 
                 <h3 class="a-product-price">R$ 95,00</h3> 
-                <a href="/camomila" class="a-btn-add">Adicionar</a> 
+                <a href="/kits camomila" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-canela.png" alt="Kit Completo Banho e Corpo" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Canela</h4> 
                 <h3 class="a-product-price">R$ 110,50</h3> 
-                <a href="/canela" class="a-btn-add">Adicionar</a> 
+                <a href="/kits canela" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-capimlimao.png" alt="Kit Capim Limão e Lavanda" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Capim Limao</h4> 
                 <h3 class="a-product-price">R$ 89,90</h3> 
-                <a href="/capim limao" class="a-btn-add">Adicionar</a> 
+                <a href="/kits capim limao" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-copaiba.png" alt="Kit Presente Dia das Mães" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Copaiba</h4> 
                 <h3 class="a-product-price">R$ 185,00</h3> 
-                <a href="/copaiba" class="a-btn-add">Adicionar</a> 
+                <a href="/kits copaiba" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-lavanda.png" alt="Kit Sabonetes Artesanais" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Lavanda</h4> 
                 <h3 class="a-product-price">R$ 75,00</h3> 
-                <a href="/lavanda" class="a-btn-add">Adicionar</a> 
+                <a href="/kits lavanda" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-melaleuca.png" alt="Kit Essencial Home Spa" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Melaleuca</h4> 
                 <h3 class="a-product-price">R$ 130,00</h3> 
-                <a href="/melaleuca" class="a-btn-add">Adicionar</a> 
+                <a href="/kits melaleuca" class="a-btn-add">Adicionar</a> 
             </div>
             
             <div class="m-product-card"> 
                 <img src="img/kits-yanglang.png" alt="Kit Viagem Essencial" class="a-product-img"> 
                 <h4 class="a-product-name">Kit Yang Lang</h4> 
                 <h3 class="a-product-price">R$ 65,00</h3> 
-                <a href="/ylang ylang" class="a-btn-add">Adicionar</a> 
+                <a href="/kits ylang ylang" class="a-btn-add">Adicionar</a> 
             </div>
 
         </div>
@@ -146,7 +146,7 @@
    
     <div class="whats">
         <a href="https://wa.me/5511913119603" target="_blank">
-          <img src="img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
+          <img src="/img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">
         </a>
     </div>
     
@@ -250,7 +250,7 @@
             </p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     

@@ -80,55 +80,55 @@
             <h4 class="a-product-name">Eucalipto</h4>
             <p class="a-product-size">140g</p>
             <h3 class="a-product-price">R$ 20,00</h3> 
-            <a href="/eucalipto" class="a-btn-add">Adicionar</a> 
+            <a href="/vela eucalipto" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card">
              <img src="img/vela-hiba.png" alt="Vela Hiba" class="a-product-img"> 
              <h4 class="a-product-name">Hiba</h4> 
              <p class="a-product-size">140g</p>
               <h3 class="a-product-price">R$ 21,00</h3> 
-            <a href="/vela-hiba" class="a-btn-add">Adicionar</a> 
+            <a href="/vela hiba" class="a-btn-add">Adicionar</a> 
         </div>
         <div class="m-product-card">
              <img src="img/vela-hortelapimenta.png" alt="Vela Hortelã Pimenta" class="a-product-img"> 
              <h4 class="a-product-name">Hortelã Pimenta</h4>
               <p class="a-product-size">140g</p> 
               <h3 class="a-product-price">R$ 20,50</h3> 
-            <a href="/vela de hortela e pimenta" class="a-btn-add">Adicionar</a> 
+            <a href="/vela hortela e pimenta" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/vela-lavanda.png" alt="Vela Lavanda" class="a-product-img">
              <h4 class="a-product-name">Lavanda</h4> <p class="a-product-size">140g</p>
               <h3 class="a-product-price">R$ 22,00</h3>
-            <a href="/lavanda" class="a-btn-add">Adicionar</a> 
+            <a href="/vela lavanda" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/vela-alecrim.png" alt="Vela Alecrim" class="a-product-img">
              <h4 class="a-product-name">Alecrim</h4> 
              <p class="a-product-size">140g</p> 
              <h3 class="a-product-price">R$ 20,00</h3> 
-            <a href="/alecrim" class="a-btn-add">Adicionar</a> 
+            <a href="/vela alecrim" class="a-btn-add">Adicionar</a> 
              </div>
         <div class="m-product-card"> 
             <img src="img/vela-bluetansy.png" alt="Vela Blue Tansy" class="a-product-img"> 
             <h4 class="a-product-name">Blue Tansy</h4> 
             <p class="a-product-size">140g</p> 
             <h3 class="a-product-price">R$ 23,40</h3> 
-            <a href="/blue tansy" class="a-btn-add">Adicionar</a> 
+            <a href="/vela blue tansy" class="a-btn-add">Adicionar</a> 
          </div>
         <div class="m-product-card"> 
             <img src="img/vela-camomila.png" alt="Vela Camomila" class="a-product-img"> 
             <h4 class="a-product-name">Camomila</h4>
              <p class="a-product-size">140g</p>
              <h3 class="a-product-price">R$ 19,70</h3> 
-            <a href="/camomila" class="a-btn-add">Adicionar</a> 
+            <a href="/vela camomila" class="a-btn-add">Adicionar</a> 
             </div>
         <div class="m-product-card"> 
             <img src="img/vela-capimlimao.png" alt="Vela Capim Limão" class="a-product-img"> 
             <h4 class="a-product-name">Capim Limão</h4> 
             <p class="a-product-size">140g</p> 
             <h3 class="a-product-price">R$ 21,00</h3> 
-            <a href="/capim limao" class="a-btn-add">Adicionar</a> 
+            <a href="/vela capim limao" class="a-btn-add">Adicionar</a> 
         </div>
     </div>
     
