@@ -13,6 +13,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    
 </head>
 <body>
     <header class="o-header">
@@ -34,8 +36,8 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
@@ -79,28 +81,28 @@
         <img src="../img/vela-alecrim.png" alt="Vela Alecrim" class="a-product-img">
         <h4 class="a-product-name">Vela Alecrim</h4>
         <h3 class="a-product-price">R$ 23,90</h3>
-        <a href="/alecrim" class="a-btn-add">Adicionar</a>
+        <a href="/vela alecrim" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/aroma-alecrim.png" alt="Aromatizante Alecrim" class="a-product-img">
         <h4 class="a-product-name">Aromatizante Alecrim</h4>
         <h3 class="a-product-price">R$ 33,70</h3>
-        <a href="/alecrim" class="a-btn-add">Adicionar</a>
+        <a href="/aromatizante alecrim" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/essencia-alecrim.png" alt="Essência de Alecrim" class="a-product-img">
         <h4 class="a-product-name">Essência de Alecrim</h4>
         <h3 class="a-product-price">R$ 50,00</h3>
-        <a href="/alecrim" class="a-btn-add">Adicionar</a>
+        <a href="/essencia alecrim" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/sbnt-argilaverdealecrim.png" alt="Sabonete de Argila Verde e Alecrim" class="a-product-img">
         <h4 class="a-product-name">Sabonete de Argila Verde e Alecrim</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/argila-verde-e-alecrim" class="a-btn-add">Adicionar</a>
+        <a href="/argila verde e alecrim" class="a-btn-add">Adicionar</a>
     </div>
 </div>
             

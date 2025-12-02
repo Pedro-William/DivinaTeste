@@ -36,8 +36,8 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
@@ -82,10 +82,10 @@
         
         <nav class="o-sidebar-menu">
             <ul class="m-account-links">
-                <li class="a-link-item"><a href="minhaconta.html" class="a-link a-link--active">Minha conta</a></li>
-                <li class="a-link-item"><a href="meuspedidos.html" class="a-link">Meus Pedidos</a></li>
-                <li class="a-link-item"><a href="meusfavoritos.html" class="a-link">Meus Favoritos</a></li>
-                <li class="a-link-item"><a href="sair.html" class="a-link a-link--logout">Sair</a></li>
+                <li class="a-link-item"><a href="/minha-conta" class="a-link a-link--active">Minha conta</a></li>
+                <li class="a-link-item"><a href="/meus-pedidos" class="a-link">Meus Pedidos</a></li>
+                <li class="a-link-item"><a href="/favoritos" class="a-link">Meus Favoritos</a></li>
+                <li class="a-link-item"><a href="/sair" class="a-link a-link--logout">Sair</a></li>
             </ul>
         </nav>
 

@@ -62,9 +62,6 @@ Route::get('/meus pedidos', function () {
 
 // --- ROTAS DE CONTA/CATEGORIAS BASE ---
 
-Route::get('/minha conta', function () {
-    return view('minhaconta');
-});
 
 Route::get('/sair', function () {
     return view('sair');
@@ -257,8 +254,8 @@ Route::get('/kits melaleuca', function () {
     return view('kits.kits-melaleuca');
 });
 
-Route::get('/kits ylang ylang', function () {
-    return view('kits.kits-ylanglang');
+Route::get('/kitsylangylang', function () {
+    return view('kits.kits-yanglang');
 });
 
 
@@ -331,7 +328,7 @@ Route::get('/coco e baunilha', function () {
 });
 
 Route::get('/laranja e camomila', function () {
-    return view('sabonetes.sabonete-laranjacecamila');
+    return view('sabonetes.sabonete-laranjaecamomila');
 });
 
 
@@ -362,7 +359,7 @@ Route::get('/vela camomila', function () {
     return view('velas.vela-camomila');
 });
 
-Route::get('/ vela capim limao', function () {
+Route::get('/vela capim limao', function () {
     return view('velas.vela-capimlimao');
 });
 
@@ -464,19 +461,19 @@ Route::middleware('auth')->group(function () {
 
     // Páginas de Usuário (Minha Conta e Pedidos)
     Route::get('/minha-conta', function () { 
-        return view('conta.minha-conta'); 
+        return view('minhaconta'); 
     })->name('minhaconta');
     
     // ✅ ROTA DE ATUALIZAÇÃO DA CONTA (PUT/PATCH para o formulário funcionar)
     Route::put('/update-account-data', [UserController::class, 'updateAccount'])->name('conta.update');
 
     Route::get('/meus-pedidos', function () { 
-        return view('conta.meus-pedidos'); 
+        return view('meuspedidos'); 
     })->name('meuspedidos');
     
     // ROTA FAVORITOS PROTEGIDA
     Route::get('/favoritos', function () { 
-        return view('conta.favoritos'); 
+        return view('meusfavoritos'); 
     })->name('favoritos');
 });
 

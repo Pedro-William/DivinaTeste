@@ -42,8 +42,8 @@
 
                 <div class="m-user-dropdown" id="user-dropdown-menu">
                     {{-- ✅ Rotas de Usuário (Protegidas) --}}
-                    <a href="/minhaconta" class="a-dropdown-link">Minha conta</a>
-                    <a href="/meuspedidos" class="a-dropdown-link">Meus Pedidos</a>
+                    <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                    <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                     
                     {{-- ✅ Logoff (Formulário é o padrão Laravel, ou um link que aciona um POST via JS) --}}
                     <a href="{{ route('logout') }}" class="a-dropdown-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sair</a>
@@ -96,9 +96,10 @@
         <nav class="o-sidebar-menu">
             <ul class="m-account-links">
                 {{-- ✅ Links do Sidebar Corrigidos --}}
-                <li class="a-link-item"><a href="/minhaconta" class="a-link">Minha conta</a></li>
-                <li class="a-link-item"><a href="/meuspedidos" class="a-link a-link--active">Meus Pedidos</a></li>
+              <li class="a-link-item"><a href="/minha-conta" class="a-link a-link--active">Minha conta</a></li>
+                <li class="a-link-item"><a href="/meus-pedidos" class="a-link">Meus Pedidos</a></li>
                 <li class="a-link-item"><a href="/favoritos" class="a-link">Meus Favoritos</a></li>
+                
                 <li class="a-link-item">
                     <a href="{{ route('logout') }}" class="a-link a-link--logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sair</a>
                 </li>

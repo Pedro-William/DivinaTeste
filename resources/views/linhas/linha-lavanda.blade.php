@@ -34,8 +34,8 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                       <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
@@ -78,28 +78,28 @@
         <img src="../img/kits-lavanda.png" alt="Kit Lavanda" class="a-product-img">
         <h4 class="a-product-name">Kit Lavanda</h4>
         <h3 class="a-product-price">R$ 95,00</h3>
-        <a href="/lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/kits lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/vela-lavanda.png" alt="Vela Lavanda" class="a-product-img">
         <h4 class="a-product-name">Vela Lavanda</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/vela lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/aroma-lavanda.png" alt="Aromatizante Lavanda" class="a-product-img">
         <h4 class="a-product-name">Aroma Lavanda</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/aromatizante lavanda" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/essencia-lavanda.png" alt="Essência Lavanda" class="a-product-img">
         <h4 class="a-product-name">Essência Lavanda</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/lavanda" class="a-btn-add">Adicionar</a>
+        <a href="/essencia lavanda" class="a-btn-add">Adicionar</a>
     </div>
 </div>
             

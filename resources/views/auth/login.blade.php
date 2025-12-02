@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Divina Essência</title>
 
+{{--  CARREGAMENTO DE FONTES EXTERNAS --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/atomic/organisms/baselogin.css') }}">
-         
+    
+    {{--  BIBLIOTECAS CSS: É melhor carregar primeiro Bootstrap e ícones --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
 
+    {{--  SEU CSS PRINCIPAL (app.css) e ORGÂNICO (baselogin.css) --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/atomic/organisms/baselogin.css') }}">
+</head>
 <body>
     <header class="o-header">
         <div class="o-header__top">
@@ -72,73 +75,87 @@
     </header>
 
 
-    <div class="container-principal">
-        <div class="breadcrumb">
-            <a href="#">Home</a> / <span>Login</span>
-        </div>
-
-        <h1 class="titulo-cadastro a-section-title"> LOGIN / ENTRAR</h1>
-
-         {{-- Exibe mensagens de erro de validação do Laravel --}}
-        @if ($errors->any())
-            <div style="color: red; margin-bottom: 20px;">
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
-        <form class="cadastro-form" method="POST" action="{{ route('login') }}">
-            @csrf
-
-            {{-- Email --}}
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" 
-                       id="email" 
-                       name="email"
-                       value="{{ old('email') }}"
-                       placeholder="Seu endereço de e-mail" 
-                       required 
-                       autofocus>
-            </div>
-
-            {{-- Senha --}}
-            <div class="form-group">
-                <label for="password">Senha:</label>
-                <input type="password" 
-                       id="password" 
-                       name="password" 
-                       placeholder="Sua senha"
-                       required 
-                       autocomplete="current-password">
-            </div>
-            
-            {{-- Lembre-me --}}
-            <div class="form-group" style="display: flex; align-items: center; justify-content: space-between; margin-top: 15px;">
-                <label for="remember_me" style="display: flex; align-items: center; cursor: pointer;">
-                    <input id="remember_me" type="checkbox" name="remember" style="margin-right: 8px;">
-                    <span>Lembrar-me</span>
-                </label>
-            </div>
-            <button type="submit" class="btn-confirmar" style="width: 100%; margin-top: 20px;">
-                Entrar
-            </button>
-            
-            <div class="form-links" style="text-align: center; margin-top: 15px;">
-                <p>Não tem uma conta? <a href="{{ route('register') }}">Cadastre-se</a></p>
-                
-                {{-- Opcional: Link para "Esqueceu a senha?" --}}
-                @if (Route::has('password.request'))
-                    <a href="{{ route('password.request') }}" style="color: #007bff; text-decoration: none; display: block; margin-top: 5px;">
-                        Esqueceu a senha?
-                    </a>
-                @endif
-            </div>
+<div class="container-principal">
+    <div class="breadcrumb">
+        <a href="#">Home</a> / <span>Meus Favoritos</span>
     </div>
 
+        {{-- O título foi escondido no CSS, mas o deixamos aqui por segurança --}}
+        <h1 class="titulo-cadastro a-section-title"> LOGIN / ENTRAR</h1>
+
+        {{-- 📌 NOVO WRAPPER DE CENTRALIZAÇÃO (OBLIGATÓRIO PARA CENTRALIZAR) --}}
+        <div class="login-wrapper">
+
+            {{-- Exibe mensagens de erro de validação do Laravel --}}
+            @if ($errors->any())
+                <div style="color: red; margin-bottom: 20px;">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+
+            <form class="cadastro-form" method="POST" action="{{ route('login') }}">
+                @csrf
+
+                {{-- Email --}}
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" 
+                            id="email" 
+                            name="email"
+                            value="{{ old('email') }}"
+                            placeholder="Seu endereço de e-mail" 
+                            required 
+                            autofocus>
+                </div>
+
+                {{-- Senha --}}
+                    <div class="campo-grupo">
+                        <label for="password">Senha</label>
+                        <div class="input-com-icone">
+                            <input type="password" 
+                                   id="password" 
+                                   name="password" {{-- ✅ name: 'password' --}}
+                                   placeholder="DIGITE SUA SENHA" 
+                                   required autocomplete="new-password">
+                            <i class="fas fa-eye toggle-password" data-target="password"></i> 
+                        </div>
+                    </div>
+
+                
+                {{-- Lembre-me (AGORA USANDO A CLASSE CSS) --}}
+                <div class="form-group-checkbox"> 
+                    <label for="remember_me">
+                        <input id="remember_me" type="checkbox" name="remember">
+                        <span>Lembrar-me</span>
+                    </label>
+                </div>
+                
+                {{-- Botão de Entrar (AGORA USANDO A CLASSE CSS) --}}
+                <button type="submit" class="btn-confirmar">
+                    Entrar
+                </button>
+                
+                {{-- Links (Cadastre-se e Esqueceu a senha) --}}
+                <div class="form-links">
+                    <p>Não tem uma conta? <a href="{{ route('register') }}">Cadastre-se</a></p>
+                    
+                    {{-- Opcional: Link para "Esqueceu a senha?" --}}
+                    @if (Route::has('password.request'))
+                        <a href="{{ route('password.request') }}" class="link-esqueceu-senha">
+                            Esqueceu a senha?
+                        </a>
+                    @endif
+                </div>
+            </form>
+        </div>
+            </form>
+        </div>
+        {{-- 📌 FIM DO NOVO WRAPPER DE CENTRALIZAÇÃO --}}
+    </div>
     <div class="whats">
         <a href="https://wa.me/5511913119603" target="_blank">
           <img src="img/wppsemfundo.png" width="70" alt="whatsapp" title="Fale conosco pelo whatsapp">

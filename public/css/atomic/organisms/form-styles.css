@@ -1,252 +1,255 @@
-/* ========================================================================
-   1. CORES E VARIÁVEIS (Reutilizando do list-styles.css ou main.css)
-======================================================================== */
-:root {
-    /* Cores que você já deve ter definido em list-styles.css ou main.css */
-    --roxo-medio: #9E7FAF;
-    --roxo-escuro: #7f6390;
-    --roxo-muito-claro: #F8F5FB;
-    --roxo-fundo-degrade: #EFE9F3; /* Cor para o background suave do body */
-    
-    --branco: #FFFFFF;
-    --cinza-texto: #333333;
+/* -------------------------------------- */
+/* ESTILOS GERAIS DA PÁGINA E DO CARD     */
+/* -------------------------------------- */
 
-    --fundo-card-form: #EFE9F3; /* Cor mais clara para o card do formulário */
+/* Usamos 'form-body' (classe aplicada no <body>) para gerenciar o layout principal */
+.form-body {
+    /* Define o layout principal como Flexbox */
+    display: flex;
+    /* Empilha o Header e o Main Content */
+    flex-direction: column;
+    /* Garante a altura total da tela */
+    min-height: 100vh;
+    /* Remove margens padrão do browser */
+    margin: 0;
+    /* Permite o rolamento se o conteúdo for maior que a tela */
+    overflow-y: auto;
 }
 
-/* ========================================================================
-   2. ESTILOS DO BODY PARA PÁGINAS DE FORMULÁRIO
-======================================================================== */
-body.form-body {
-    background-color: var(--roxo-fundo-degrade); /* Fundo suave, como na imagem */
+/* -------------------------------------- */
+/* CONTAINER PRINCIPAL PARA CENTRALIZAÇÃO */
+/* -------------------------------------- */
+
+/* Este é o novo container que envolve o path e o form-wrapper.
+   No HTML, seria a tag <main class="main-content-centered"> */
+.main-content-centered {
+    /* Ocupa o espaço restante verticalmente */
+    flex-grow: 1;
+    /* Centralização usando Flexbox */
     display: flex;
-    flex-direction: column;
+    /* Centraliza os itens verticalmente (no espaço restante) */
     align-items: center;
+    /* Centraliza os itens horizontalmente (não estritamente necessário se usarmos margin: auto) */
     justify-content: center;
-    min-height: 100vh; /* Ocupa a altura total da viewport */
-    padding: 20px;
-}
-
-/* ========================================================================
-   3. CONTAINER PRINCIPAL DO FORMULÁRIO
-======================================================================== */
-.form-container {
-    background-color: rgba(237, 229, 231, 1); /* Cor do card, um roxo bem claro */
-    border-radius: 15px; /* Bordas mais arredondadas */
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra mais suave e evidente */
-    padding: 40px; /* Preenchimento interno */
-    width: 90%;
-    max-width: 500px; /* Largura máxima para centralizar */
-    text-align: center; /* Centraliza o título */
-    position: relative; /* Para o botão do menu hamburguer */
-    margin-top: 50px; /* Para não ficar colado no menu superior, se houver */
-}
-
-.form-container h1 {
-    font-size: 28px;
-    color: var(--cinza-texto);
-    margin-bottom: 30px; /* Espaço entre o título e o formulário */
-    font-weight: bold;
-}
-
-/* ========================================================================
-   4. ESTILOS GERAIS DO FORMULÁRIO E CAMPOS
-======================================================================== */
-.cadastro-form {
-    display: flex;
+    /* Permite que o conteúdo do main se organize em uma coluna (path em cima, form embaixo) */
     flex-direction: column;
-    gap: 20px; /* Espaço entre os grupos de formulário */
-    align-items: stretch; /* Estica os itens para preencher a largura */
+    /* Adiciona padding para evitar que o formulário "grude" nas bordas em telas menores */
+    padding: 20px 10px;
+}
+
+.form-container {
+    background-color: var(--cor-fundo-form);
+    padding: 40px;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin: 0 auto 50px auto;
+    background-color: transparent; 
+    
+    
+} 
+
+
+/* -------------------------------------- */
+/* ESTILOS DO HEADER PATH E FORM-WRAPPER  */
+/* -------------------------------------- */
+
+.header-path {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+    /* 'align-self' não é mais necessário aqui; 'main-content-centered' cuida disso. 
+       Mas 'margin: auto' centraliza no eixo horizontal: */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-wrapper {
+ max-width: 800px;
+ width: 100%;
+ /* ... comentários ... */
+ margin: 20px auto; /* Primeira definição */
+}
+
+.titulo-cadastro {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* -------------------------------------- */
+/* LAYOUT DE GRID (COLUNAS)               */
+/* -------------------------------------- */
+
+.cadastro-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    max-width: 100%;
 }
 
 .form-group {
-    text-align: left; /* Alinha o texto das labels à esquerda */
-    margin-bottom: 10px; /* Espaço entre cada grupo de label/input */
-}
-
-.form-group label {
-    display: block; /* Garante que a label ocupe sua própria linha */
-    margin-bottom: 8px; /* Espaço entre a label e o input */
-    font-weight: 600; /* Negrito para as labels */
-    color: var(--cinza-texto);
-    font-size: 15px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="password"] {
-    width: 100%; /* Ocupa toda a largura disponível */
-    padding: 12px 15px; /* Preenchimento interno */
-    border: 1px solid var(--roxo-medio); /* Borda com a cor roxa */
-    border-radius: 8px; /* Bordas levemente arredondadas */
-    font-size: 15px;
-    color: var(--cinza-texto);
-    background-color: var(--branco); /* Fundo branco para os inputs */
-    transition: border-color 0.3s ease;
-}
-
-.form-group input::placeholder {
-    color: #999; /* Cor do placeholder */
-    font-size: 14px;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: var(--roxo-escuro); /* Borda mais escura ao focar */
-    box-shadow: 0 0 0 3px rgba(158, 127, 175, 0.2); /* Sombra suave ao focar */
-}
-
-/* --- Estilo para o campo de senha com ícone --- */
-.password-input-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.password-input-wrapper input {
-    padding-right: 40px; /* Espaço para o ícone */
-}
-
-.password-toggle {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: var(--roxo-medio); /* Cor do ícone */
-    font-size: 18px;
-}
-
-/* --- Estilo para o Checkbox --- */
-.checkbox-group {
-    display: flex;
-    align-items: center; /* Alinha o checkbox e a label */
-    gap: 10px; /* Espaço entre o checkbox e a label */
-    margin-top: 10px;
-}
-
-.checkbox-group input[type="checkbox"] {
-    appearance: none; /* Esconde o checkbox padrão do navegador */
-    width: 20px;
-    height: 20px;
-    border: 2px solid var(--roxo-medio);
-    border-radius: 4px;
-    background-color: var(--branco);
-    cursor: pointer;
-    position: relative;
-    display: flex; /* Para centralizar o checkmark */
-    align-items: center;
-    justify-content: center;
-}
-
-.checkbox-group input[type="checkbox"]:checked {
-    background-color: var(--roxo-medio); /* Fundo roxo quando marcado */
-    border-color: var(--roxo-medio);
-}
-
-.checkbox-group input[type="checkbox"]:checked::after {
-    content: '✔'; /* Adiciona um checkmark */
-    color: var(--branco);
-    font-size: 14px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.checkbox-group label {
-    margin-bottom: 0; /* Remove a margem inferior da label do checkbox */
-    font-weight: normal; /* Não negrito para a label do checkbox */
-}
-
-/* ========================================================================
-   5. BOTÃO DE CONFIRMAR
-======================================================================== */
-.btn-confirmar {
-    background-color: var(--roxo-medio); /* Cor de fundo do botão */
-    color: var(--branco); /* Cor do texto do botão */
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px; /* Botão pílula */
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px; /* Espaço acima do botão */
-    width: 100%; /* Ocupa a largura total */
-    max-width: 250px; /* Largura máxima, centralizado */
-    align-self: center; /* Centraliza o botão dentro do flex container */
-}
-
-.btn-confirmar:hover {
-    background-color: var(--roxo-escuro); /* Cor mais escura ao passar o mouse */
-    transform: translateY(-2px); /* Efeito de elevação sutil */
-}
-
-/* ========================================================================
-   6. LINKS INFERIORES
-======================================================================== */
-.form-links {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre os links */
+}
+
+/* -------------------------------------- */
+/* ESTILOS DOS INPUTS E LABELS            */
+/* -------------------------------------- */
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+/* -------------------------------------- */
+/* SENHA COM ÍCONE                        */
+/* -------------------------------------- */
+
+.input-com-icone .fas {
+    position: absolute;
+    top: 35%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: var(--cor-placeholder);
+    cursor: pointer;
+}
+/* -------------------------------------- */
+/* LINHA 4: CHECKBOX (Alinhado com o Contato) */
+/* -------------------------------------- */
+
+.checkbox-only-container {
+    /* Alinha o checkbox ao topo, como o label do Contato */
+    justify-content: flex-start;
+    padding-top: 30px; /* Ajusta para alinhar verticalmente com o input do Contato */
+}
+
+.checkbox-grupo {
+    display: flex;
     align-items: center;
 }
 
-.form-links .btn {
-    padding: 10px 25px;
+.checkbox-grupo input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-grupo label {
+    font-weight: normal;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 0;
+}
+
+
+/* -------------------------------------- */
+/* LINHA 5: DATA DE NASCIMENTO E BOTÃO    */
+/* -------------------------------------- */
+
+/* Container da Data de Nascimento (Coluna 1) */
+.data-nascimento-container {
+    grid-column: 1 / 2;
+}
+
+.date-select-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.date-select-group select {
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23888' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+    background-size: 12px;
+    width: 60px; /* Largura para replicar a imagem */
+    text-align: center;
+}
+
+/* Container do Botão Final (Coluna 2) */
+.button-final-container {
+    grid-column: 2 / 3;
+    /* CHAVE DA CORREÇÃO: Alinha o conteúdo ao final da célula para nivelar com a Data */
+    justify-content: flex-end;
+}
+
+/* Estilo do Botão de Cadastro */
+.btn-cadastro {
+    background-color: #a088c3; /* Cor roxa da imagem */
+    color: white;
+    padding: 12px 20px;
+    border: none;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
     width: 100%;
-    max-width: 280px; /* Largura máxima para os botões de link */
+    /* Altura do botão, alinhado com a altura dos inputs/selects */
+    height: 45px;
+    margin-top: 15px; /* Ajuste para dar espaço ao label da Data de Nascimento */
 }
 
-.form-links .btn-voltar {
-    color: var(--branco);
+.btn-cadastro:hover {
+    background-color: #8c72b0;
 }
 
-.form-links .btn-voltar:hover {
-    background-color: #5a6268;
-}
 
-.form-links .btn-lista {
-    background-color: var(--roxo-medio); /* Roxo para o botão de listar */
-    color: var(--branco);
-}
+/* -------------------------------------- */
+/* MEDIA QUERIES (RESPONSIVIDADE)         */
+/* -------------------------------------- */
 
-.form-links .btn-lista:hover {
-    background-color: var(--roxo-escuro);
-}
+@media (max-width: 650px) {
+    .cadastro-form {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Todos os containers voltam ao fluxo normal de 1 coluna */
+    .checkbox-only-container,
+    .data-nascimento-container,
+    .button-final-container {
+        grid-column: 1 / 2;
+        padding-top: 0;
+        justify-content: flex-start;
+    }
 
-/* ========================================================================
-   7. RESPONSIVIDADE
-======================================================================== */
-@media (max-width: 600px) {
-    .form-container {
-        padding: 30px 20px;
-        width: 95%;
+    .date-select-group {
+        flex-wrap: wrap;
     }
-    .form-container h1 {
-        font-size: 24px;
-        margin-bottom: 25px;
+    .date-select-group select {
+        width: 100%;
     }
-    .form-group label {
-        font-size: 14px;
-    }
-    .form-group input {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
-    .btn-confirmar {
-        font-size: 16px;
-        padding: 12px 25px;
-        max-width: 200px;
-    }
-    .form-links .btn {
-        font-size: 13px;
-        padding: 8px 20px;
-        max-width: 240px;
+    .btn-cadastro {
+        margin-top: 10px;
     }
 }

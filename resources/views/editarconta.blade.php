@@ -38,10 +38,11 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
+                    
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="minhaconta.html" class="a-dropdown-link">Minha conta</a>
-                        <a href="meuspedidos.html" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="sair.html" class="a-dropdown-link">Sair</a>
+                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
                 

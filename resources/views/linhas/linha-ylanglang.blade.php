@@ -34,8 +34,8 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
@@ -79,14 +79,14 @@
         <img src="../img/kits-yanglang.png" alt="Kit Ylang Ylang" class="a-product-img">
         <h4 class="a-product-name">Kit Ylang Ylang</h4>
         <h3 class="a-product-price">R$ 95,00</h3>
-        <a href="/kits/ylang-ylang" class="a-btn-add">Adicionar</a>
+        <a href="/kitsylangylang" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
         <img src="../img/essencia-ylangglang.png" alt="Essência Ylang Ylang" class="a-product-img">
         <h4 class="a-product-name">Essência Ylang Ylang</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
-        <a href="/essencias/ylang-ylang" class="a-btn-add">Adicionar</a>
+        <a href="/essencia ylang ylang" class="a-btn-add">Adicionar</a>
     </div>
 </div>
             

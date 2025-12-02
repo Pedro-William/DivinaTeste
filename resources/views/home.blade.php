@@ -32,8 +32,8 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
@@ -208,7 +208,7 @@
             <a href="/linha copaiba" class="m-category-card"> <div class="m-banner-content"> <img src="img/copaiba-linha.png" alt="Linha Lavanda 2" class="a-banner-img"> </div> </a>
             <a href="/linha melaleuca" class="m-category-card"> <div class="m-banner-content"> <img src="img/melaleuca-linha.png" alt="Linha Capim Limão 2" class="a-banner-img"> </div> </a>
             <a href="/linha alecrim" class="m-category-card"> <div class="m-banner-content"> <img src="img/alecrim-linha.png" alt="Linha Eucalipto 2" class="a-banner-img"> </div> </a>
-            <a href="/linha ylanglang" class="m-category-card"> <div class="m-banner-content"> <img src="img/ylanglang-linha.png" alt="Linha Camomila 2" class="a-banner-img"> </div> </a>
+            <a href="/linha ylang ylang" class="m-category-card"> <div class="m-banner-content"> <img src="img/ylanglang-linha.png" alt="Linha Camomila 2" class="a-banner-img"> </div> </a>
         </div>
         
         <button class="a-carousel-control a-carousel-control--next" aria-label="Próximo">

@@ -1,45 +1,202 @@
+/*
+=================================================
+1. ESTILO DO CONTAINER GERAL E BODY
+=================================================
+*/
+/* O body agora terá o fundo branco/levemente cinza da imagem */
+body {
+    background-color: #fcfcfc; /* Fundo muito claro da imagem */
+    font-family: 'Inria Sans', sans-serif;
+}
+
 .container-principal {
     width: 100%;
-    max-width: 900px;
-    margin: 5px auto;
-    margin-bottom: 60px;
-}
-
-.form-login-ajuste {
-    max-width: 400px;
-    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 40px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.form-container {
-    background-color: var(--cor-fundo-form);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+/* 2. O título foi removido no novo design, mas mantemos o estilo em caso de uso futuro */
+.titulo-cadastro {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: none; /* Esconde o título (LOGIN / ENTRAR) que não aparece na imagem */
 }
 
-.botoes-login {
+/*
+=================================================
+3. WRAPPER DE CENTRALIZAÇÃO DO FORMULÁRIO (NOVO)
+=================================================
+*/
+/* Reajustado para centralizar o formulário no centro da tela */
+.login-wrapper {
+    width: 100%;
+    /* Mantém a centralização vertical/horizontal, se o formulário for o único elemento principal */
+    min-height: calc(100vh - 120px - 30px);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
+
+/* O novo design NÃO USA o 'login-form-wrapper' do bloco lilás */
+/* Se este elemento existir no seu HTML, certifique-se de que ele não está ativo */
+
+/*
+=================================================
+4. ESTILIZAÇÃO DO FORMULÁRIO (BLOCO BRANCO)
+=================================================
+*/
+.cadastro-form {
+    /* O formulário agora é o próprio BLOCO BRANCO centralizado */
+    width: 100%;
+    max-width: 380px; /* Largura ajustada para o tamanho da imagem */
+    padding: 30px;
+    background-color: #EEE5E8;;/* Fundo Branco, conforme a imagem */
+    border: 1px solid #e0e0e0; /* Borda clara */
+    border-radius: 10px; /* Cantos levemente arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    
+    /* Configuração de layout interno */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 35px;
+    gap: 15px; 
 }
 
-.botoes-login .btn-cadastro {
-    width: 180px;
-    border-radius: 25px;
-    color: white; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+/* --- Estilo para o campo de senha com ícone --- */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--roxo-medio); /* Cor do ícone */
+    font-size: 18px;
+}
+
+/*
+=================================================
+5. ESTILIZAÇÃO DOS GRUPOS DE INPUTS E CORES DOS CAMPOS
+=================================================
+*/
+.form-group {
+    margin-bottom: 5px; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Estilo para todos os inputs de texto/senha */
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: none; /* A imagem parece ter border: none */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Cor do Campo E-MAIL (Lilás/Roxo Claro) */
+.cadastro-form input[type="email"] {
+    background-color: #E8E3F5;
+}
+
+/* Cor do Campo SENHA (Lilás/Roxo Mais Escuro) */
+.cadastro-form input[type="password"] {
+    background-color:#E8E3F5;
+}
+
+/* Placeholder Style (Ajustado para o estilo sem uppercase) */
+.cadastro-form input::placeholder {
+    color: #777;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: none; /* Remove uppercase */
+}
+
+/*
+=================================================
+7. BOTÃO "ENTRAR" (ROSA CLARO)
+=================================================
+*/
+.btn-confirmar {
+    /* Novo estilo: Rosa claro, arredondado */
+    background-color: #9a7fb3;
+    color: white;
+    border-radius: 20px; 
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px; /* Espaço após o checkbox */
+    /* Remove estilos de botões anteriores se houver */
+    border: none;
+    cursor: pointer;
+}
+
+.btn-confirmar:hover {
+    background-color: #9a7fb3; /* Variação de hover */
+}
+
+/*
+=================================================
+8. LINK "NÃO TEM UMA CONTA? CADASTRE-SE" (NOVO)
+=================================================
+*/
+/* Estilo para o wrapper do link */
+.form-links {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+    display: block !important; /* Certifica que está visível */
+}
+
+.form-links p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Estilo do link "Cadastre-se" */
+.form-links a {
+    color: #e8a0c8; /* Mesma cor Rosa do botão */
+    font-weight: bold;
     text-decoration: none;
+    display: inline;
+    margin-left: 5px;
 }
 
-@media (max-width: 768px) {
-    .botoes-login .btn-cadastro {
-        width: 100%;
-    }
+.form-links a:hover {
+    text-decoration: underline;
 }
+
+/* O botão btn-cadastro-link (do mockup anterior) não é mais necessário */
+.btn-cadastro-link {
+    display: none;
+}
+
+/* Regras antigas de cadastro-form não são mais necessárias */
+/* ... (Seções 4, 8 e 9 do CSS anterior podem ser removidas se não houver conflito) ... */

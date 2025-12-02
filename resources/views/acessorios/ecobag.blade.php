@@ -31,11 +31,9 @@
             <div class="a-logo">
                 {{-- ✅ Usando asset() para imagem e route() para rota --}}
                 <a href="/home">
-<<<<<<< HEAD
+
                     <img src="/img/Logo.png" alt="Divina Essência">
-=======
-                    <img src="img/Logo.png" alt="Divina Essência">
->>>>>>> 33cabe6764b33cbd2641b97af95ac47c9ac5a5d5
+
                 </a>
             </div>
     
@@ -51,8 +49,8 @@
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
                         {{-- ✅ Usando route() --}}
-                        <a href="/minhaconta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meuspedidos" class="a-dropdown-link">Meus Pedidos</a>
+                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/logout" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
