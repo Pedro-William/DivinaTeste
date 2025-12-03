@@ -33,14 +33,7 @@
             </div>
     
             <div class="m-user-options">
-                <div class="m-user-menu-trigger">
-                    <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
-                    <div class="m-user-dropdown" id="user-dropdown-menu">
-                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/sair" class="a-dropdown-link">Sair</a>
-                    </div>
-                </div>
+                
                 
                 <a href="carrinho.html" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
@@ -49,6 +42,14 @@
                 <a href="../meusfavoritos.html" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
+                <div class="m-user-menu-trigger">
+                    <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
+                    <div class="m-user-dropdown" id="user-dropdown-menu">
+                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
+                    </div>
+                </div>
             </div>
         </div>
     
@@ -70,7 +71,7 @@
     </header>
     
     <section class="o-product-grid" id="kits-grid">
-        <h1 class="a-section-title" style="margin-top: 40px; text-align: left; padding-left: 20px;">KITS</h1>
+        <h1 class="a-section-title" style="margin-top: 40px; text-align: left; padding-left: 20px;">LINHA </h1>
         
 
 

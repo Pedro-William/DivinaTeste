@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vela Alecrim - Divina Essência</title>
 
-    <link rel="stylesheet" href="{{ asset('../css/app.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/atoms/buttons.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/search.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/user-options.css')}}">
@@ -43,14 +43,6 @@
             </div>
     
             <div class="m-user-options">
-                <div class="m-user-menu-trigger">
-                    <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
-                    <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/sair" class="a-dropdown-link">Sair</a>
-                    </div>
-                </div>
                 
                 <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
@@ -60,6 +52,16 @@
                 <a href="/favoritos" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
+
+                <div class="m-user-menu-trigger">
+                    <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
+                    <div class="m-user-dropdown" id="user-dropdown-menu">
+                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     
@@ -94,9 +96,16 @@
             <h1 class="a-product-title">Vela de Alecrim</h1>
             <p class="a-product-price">R$ 20,00</p>
             
-            <div class="o-product-description">
-                <h2 class="a-description-title">Benefícios</h2>
+            <h2 class="a-description-title">Benefícios</h2>
                 <ul class="m-benefits-list">
+                    <li><strong>Clareza e Foco Mental:</strong> O aroma canforado e estimulante do alecrim é um tônico natural para a mente, ideal para momentos que exigem concentração, estudo e produtividade.</li>
+        <li><strong>Revitalização e Energia:</strong> Combate a letargia, a apatia e a sonolência excessiva, promovendo um ânimo renovado e uma sensação de vigor.</li>
+        <li><strong>Proteção e Purificação:</strong> Cria uma atmosfera de proteção energética, auxiliando na purificação do ar e na renovação das boas vibrações do seu espaço.</li>
+        <li><strong>Feita com delicadeza:</strong> Produção artesanal com cera vegetal e óleos essenciais puros, proporcionando uma queima limpa e segura.</li>
+    </ul>
+<p class="a-product-summary">
+       Acenda a Vela Aromática de Alecrim durante o dia, em seu escritório ou área de estudo, para potencializar o foco e a clareza de pensamento. É a "vela da atenção", que ilumina a mente e traz a sensação de estar presente e desperto.
+    </p>
 
 
             <div class="m-buy-options">
@@ -269,7 +278,6 @@
             </div>
         </div>
     </section>
-    
     <div class="m-footer-info">
         <div class="a-contact-block">
             <h4>Precisa de ajuda?</h4>

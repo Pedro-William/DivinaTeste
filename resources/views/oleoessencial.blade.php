@@ -29,6 +29,16 @@
             </div>
     
             <div class="m-user-options">
+                
+                
+                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
+                    <i class="a-icon bi bi-bag"></i>
+                </a>
+                
+                
+                <a href="/favoritos" class="a-icon-link">
+                    <i class="a-icon bi bi-heart"></i>
+                </a>
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
     
@@ -39,15 +49,6 @@
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
                 </div>
-                
-                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
-                    <i class="a-icon bi bi-bag"></i>
-                </a>
-                
-                
-                <a href="/favoritos" class="a-icon-link">
-                    <i class="a-icon bi bi-heart"></i>
-                </a>
             </div>
         </div>
     

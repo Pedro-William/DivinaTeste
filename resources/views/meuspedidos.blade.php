@@ -37,7 +37,17 @@
         </div>
 
         <div class="m-user-options">
-            <div class="m-user-menu-trigger">
+            
+            
+            <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
+                    <i class="a-icon bi bi-bag"></i>
+                </a>
+                
+                
+                <a href="/favoritos" class="a-icon-link">
+                    <i class="a-icon bi bi-heart"></i>
+                </a>
+                <div class="m-user-menu-trigger">
                 <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
 
                 <div class="m-user-dropdown" id="user-dropdown-menu">
@@ -49,15 +59,6 @@
                     <a href="{{ route('logout') }}" class="a-dropdown-link" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sair</a>
                 </div>
             </div>
-            
-            <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
-                    <i class="a-icon bi bi-bag"></i>
-                </a>
-                
-                
-                <a href="/favoritos" class="a-icon-link">
-                    <i class="a-icon bi bi-heart"></i>
-                </a>
         </div>
     </div>
 

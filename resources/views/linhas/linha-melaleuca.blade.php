@@ -31,14 +31,7 @@
             </div>
     
             <div class="m-user-options">
-                <div class="m-user-menu-trigger">
-                    <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
-                    <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
-                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
-                        <a href="/sair" class="a-dropdown-link">Sair</a>
-                    </div>
-                </div>
+                
                 
                 <a href="carrinho.html" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
@@ -47,6 +40,14 @@
                 <a href="../meusfavoritos.html" class="a-icon-link">
                     <i class="a-icon bi bi-heart"></i>
                 </a>
+                <div class="m-user-menu-trigger">
+                    <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
+                    <div class="m-user-dropdown" id="user-dropdown-menu">
+                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                        <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
+                        <a href="/sair" class="a-dropdown-link">Sair</a>
+                    </div>
+                </div>
             </div>
         </div>
     
@@ -76,16 +77,16 @@
             
         <div class="m-product-row">
     <div class="m-product-card">
-        <img src="../img/vela-eucalipto.png" alt="Vela Eucalipto" class="a-product-img">
-        <h4 class="a-product-name">Vela Eucalipto</h4>
+        <img src="../img/essencia-melaleuca.png" alt="Óleo Essencial de Melaleuca com embalagem Divina Essência" class="a-product-img">
+        <h4 class="a-product-name">Óleo Essencial de Melaleucao</h4>
         <h3 class="a-product-price">R$ 23,00</h3>
         <a href="/eucalipto" class="a-btn-add">Adicionar</a>
     </div>
 
     <div class="m-product-card">
-        <img src="../img/essencia-eucalipto.png" alt="Essência Eucalipto" class="a-product-img">
-        <h4 class="a-product-name">Essência Eucalipto</h4>
-        <h3 class="a-product-price">R$ 23,00</h3>
+        <img src="../img/kits-melaleuca.png" alt="Essência Eucalipto" class="a-product-img">
+        <h4 class="a-product-name">Kit Melaleuca</h4>
+        <h3 class="a-product-price">R$ 130,000</h3>
         <a href="/eucalipto" class="a-btn-add">Adicionar</a>
     </div>
 </div>

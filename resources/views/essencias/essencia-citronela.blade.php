@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Óleo Essencial Cintronela- Divina Essência</title>
 
-      <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+      
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/atoms/buttons.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/search.css')}}">
     <link rel="stylesheet" href="{{ asset('../css/atomic/molecules/user-options.css')}}">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('../css/atomic/organisms/productpage.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
@@ -44,12 +46,13 @@
                 <div class="m-user-menu-trigger">
                     <i class="a-icon bi bi-box-arrow-in-right" id="login-icon"></i>
                     <div class="m-user-dropdown" id="user-dropdown-menu">
-                        <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
+                         <a href="/minha-conta" class="a-dropdown-link">Minha conta</a>
                         <a href="/meus-pedidos" class="a-dropdown-link">Meus Pedidos</a>
                         <a href="/sair" class="a-dropdown-link">Sair</a>
                     </div>
+                </div>
 
-               <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
+                <a href="/carrinho" class="a-icon-link" id="cart-icon-link">
                     <i class="a-icon bi bi-bag"></i>
                 </a>
                 

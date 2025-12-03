@@ -53,7 +53,7 @@
 }
 
 .a-product-price {
-    font-size: 18px;
+    font-size: 25   px;
     font-weight: bold;
     color: #4B0082;
     margin: 10px 0 15px 0;
@@ -104,4 +104,4 @@
     .a-section-title {
         text-align: center !important;
     }
-}
+}   
